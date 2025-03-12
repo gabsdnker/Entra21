@@ -6,22 +6,19 @@ public class Exercicio3 {
 	public static void main(String[] args) {
 		/**Leia quatro valores inteiros A, B, C e D
         A seguir, calcule e mostre a diferença do produto de A e B pelo produto de C e D **/
+		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite o valor de A: ");
-		Scanner input = new Scanner(System.in);
 		int a = input.nextInt();
 		
 		System.out.println("Digite o valor de B: ");
-		Scanner input2 = new Scanner(System.in);
-		int b = input2.nextInt();
+		int b = input.nextInt();
 		
 		System.out.println("Digite o valor de C: ");
-		Scanner input3 = new Scanner(System.in);
-		int c = input3.nextInt();
+		int c = input.nextInt();
 		
 		System.out.println("Digite o valor de D: ");
-		Scanner input4 = new Scanner(System.in);
-		int d = input4.nextInt();
+		int d = input.nextInt();
 		
 		int diferencaProduto = a * b;
 		int diferencaProduto2 = c * d;

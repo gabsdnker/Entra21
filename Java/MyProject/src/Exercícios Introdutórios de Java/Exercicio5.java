@@ -9,10 +9,10 @@ public class Exercicio5 {
 			peso 3.5 e nota B 6.5.
 		 */
 		Scanner input = new Scanner(System.in);		
-		System.out.println("Digite o primero valor: ");
+		System.out.println("Digite o primera nota: ");
 		double valor1 = input.nextDouble();
 		
-		System.out.println("Digite o segundo valor: ");
+		System.out.println("Digite o segunda nota: ");
 		double valor2 = input.nextDouble();
 		
 		double a = 3.5;

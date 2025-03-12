@@ -6,9 +6,9 @@ public class Exercicio2 {
 		
 		/**Calcule a área de um círculo a partir do valor do raio
 		Fórmula: A = pi * r^2**/
-
-		System.out.println("Digite o valor do raio: ");
 		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Digite o valor do raio: ");
 		double raio = input.nextDouble();
 
 		double areaCirculo = 3.14 * Math.pow(raio, 2);

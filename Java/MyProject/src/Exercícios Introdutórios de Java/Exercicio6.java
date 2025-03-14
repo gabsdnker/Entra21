@@ -29,7 +29,6 @@ public class Exercicio6 {
 		double comissao = (vendas * porcentagemComissao)/100 ;
 		double salarioFinal = comissao + salarioFixo;
 		
-		
 		System.out.println("Salário total: " + df.format(salarioFinal));	
 
 	}

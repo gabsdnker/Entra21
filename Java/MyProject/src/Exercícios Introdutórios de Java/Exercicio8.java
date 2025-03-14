@@ -1,3 +1,4 @@
+//Autor: Gabrielli Danker
 import java.util.Scanner;
 
 public class Exercicio8 {
@@ -27,7 +28,7 @@ public class Exercicio8 {
 		
 		double trianguloRetangulo = (A * C)/2;
 		
-		double circulo = 3.14 * Math.pow(C, 2);
+		double circulo = Math.PI * Math.pow(C, 2);
 		
 		double trapezio = ((A * B) * C)/2;
 		

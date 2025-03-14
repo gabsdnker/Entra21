@@ -9,13 +9,13 @@ public class Exercicio3 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite seu nome: ");
-		String nome = input.nextLine();
+		String nome = input.next();
 		
 		String nome2 = "Gabrielli Danker";
 		
 		nome2.trim();
 		
-		if (nome.equals(nome2)) {
+		if (nome.equalsIgnoreCase(nome2)) {
 			System.out.println("Nome correto.");
 		}
 		else {

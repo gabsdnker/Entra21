@@ -23,8 +23,10 @@ public class Exercicio6 {
 		
 		System.out.println("Digite o total de vendas efetuadas no mês: ");
 		double vendas = input.nextDouble();
+
+		double porcentagemComissao = 0.15;
 		
-		double comissao = (vendas * 15)/100 ;
+		double comissao = (vendas * porcentagemComissao)/100 ;
 		double salarioFinal = comissao + salarioFixo;
 		
 		

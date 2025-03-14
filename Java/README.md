@@ -2,4 +2,4 @@
 
 - Entrada de usuário
 - Exercícios Introdutório de Java
-- Pesquisa de exercícios extras
+- Pesquisa de exercícios extras (por conta propria)

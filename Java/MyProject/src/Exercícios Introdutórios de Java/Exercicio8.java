@@ -32,7 +32,7 @@ public class Exercicio8 {
 		
 		double trapezio = ((A * B) * C)/2;
 		
-		double quadrado = B * 4;
+		double quadrado = Math.pow(B, 2);
 		
 		double retangulo = A * B;
 		

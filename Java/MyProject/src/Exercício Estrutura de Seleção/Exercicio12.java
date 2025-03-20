@@ -6,7 +6,7 @@ public class Exercicio12 {
 
 	public static void main(String[] args) {
 		/*
-		 Faça um programa que funciona como um conversor universal.
+		Faça um programa que funciona como um conversor universal.
 		Primeiro o usuário escolhe se ele quer converter: temperatura, peso, comprimento ou volume.
 		Depois, ele escolhe qual a unidade do valor que ele deseja converter
 		Após isso, o usuário entra com o valor desejado

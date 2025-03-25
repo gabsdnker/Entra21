@@ -16,25 +16,20 @@ public class Exercicio18{
         double reajuste;
 
         if (mesesAdmissao <= 12) {
-    
             reajuste = 0.05;
     
          } else if (mesesAdmissao >= 13 && mesesAdmissao <= 48) {
-    
             reajuste = 0.07;
     
          } else {
-    
             reajuste = 0;
     
          }
     
          if (reajuste > 0) {
-    
             System.out.printf("O funcionário receberá um reajuste de %.0f%% no salário.%n", reajuste * 100);
     
          } else {
-    
             System.out.println("O funcionário não tem direito a reajuste.");
     
          }

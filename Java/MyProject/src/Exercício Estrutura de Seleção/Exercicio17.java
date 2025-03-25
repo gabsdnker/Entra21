@@ -2,11 +2,12 @@
 import java.util.Scanner;
 public class Exercicio17{
     public  static void main(String[] args){
-        /*A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar
-        mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo
-        de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o valor por
-        hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso
-        tenham sido trabalhadas (considere que o mês possua 4 semanas exatas)*/
+        /*Leia uma data (dia, mês e ano) e determine se ela é válida.
+		Lembre dos anos bissextos!
+		Faça com que o programe informe que a data é inválida assim que o usuário informar um valor 
+		inexistente.
+		Por exemplo, assim que o usuário informar o dia 50 o programa já deve parar e não deve 
+		receber o mês e ano.*/
         
         Scanner input = new Scanner(System.in);
         
@@ -33,7 +34,7 @@ public class Exercicio17{
                         System.out.println("Data Inválida");
                         
                     } else {
-                        System.out.println("Data Válida!");
+                        System.out.println(dia + "/" + mes + "/" + ano + " -Data válida!");
                     }
                 }else {
                     if (dia > 31 && mes > 12){
@@ -46,7 +47,7 @@ public class Exercicio17{
                         System.out.println("Data Inválida!");
                         
                     } else {
-                        System.out.println("Data Válida!");
+                        System.out.println(dia + "/" + mes + "/" + ano + " -Data válida!");
                     }
                 }
             }else {

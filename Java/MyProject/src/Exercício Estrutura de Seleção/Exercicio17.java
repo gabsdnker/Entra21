@@ -50,10 +50,10 @@ public class Exercicio17{
                     }
                 }
             }else {
-                System.out.println("Mês Inválida!");
+                System.out.println("Mês Inválido!");
             }
         }else if (dia > 31 || dia <= 0) {
-            System.out.println("Data Inválida!");
+            System.out.println("Dia Inválido!");
         }
 
     }

@@ -13,39 +13,46 @@ public class Exercicio17{
         System.out.println("Dia: ");
         int dia = input.nextInt();
         
-        if (dia <= 31){
+        if (dia <= 31 && dia >= 1){
             System.out.println("Mês: ");
             int mes = input.nextInt();
             
-            if (mes <= 12){
+            if (mes <= 12 && mes >= 1){
                 System.out.println("Ano: ");
                 int ano = input.nextInt();
                 
                 if (ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0)){
+                	
                     if (dia > 31 && mes > 12){
                         System.out.println("Data Inválida!");
+                        
                     } else if ((mes == 4) || (mes == 6 || mes == 9 || mes == 11) && (dia < 0 || dia > 30)){
                         System.out.println("Data Inválida!");
+                        
                     } else if (mes == 2 && dia > 29){
                         System.out.println("Data Inválida");
+                        
                     } else {
                         System.out.println("Data Válida!");
                     }
-                } else {
+                }else {
                     if (dia > 31 && mes > 12){
                         System.out.println("Data Inválida!");
+                        
                     } else if ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && (dia < 0 || dia > 30)){
                         System.out.println("Data Inválida!");
+                        
                     }  else if(mes == 2 && dia > 28){
                         System.out.println("Data Inválida!");
+                        
                     } else {
                         System.out.println("Data Válida!");
                     }
                 }
             }else {
-                System.out.println("Data Inválida!");
+                System.out.println("Mês Inválida!");
             }
-        } else if (dia > 31) {
+        }else if (dia > 31 || dia <= 0) {
             System.out.println("Data Inválida!");
         }
 

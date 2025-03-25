@@ -1,3 +1,4 @@
+//Autor: Gabrielli Danker
 import java.util.Scanner;
 public class Exercicio17{
     public  static void main(String[] args){

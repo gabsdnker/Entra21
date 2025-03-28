@@ -13,8 +13,9 @@ public class Exercicio6 {
 		
 		double somaAlturas = 0;
 		int contador = 0;
+		int i = 0;
 		
-		while (true) {
+		while (i == 0) {
 			System.out.println("Digite a altura: ");
 			double altura = input.nextDouble();
 			

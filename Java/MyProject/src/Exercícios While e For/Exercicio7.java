@@ -26,7 +26,7 @@ public class Exercicio7 {
 			
 			int i = 0;
 			
-			while (i != 0) {
+			while (i == 0) {
 				System.out.println("Digite o número inscrição: ");
 				long inscricao = input.nextLong();
 				

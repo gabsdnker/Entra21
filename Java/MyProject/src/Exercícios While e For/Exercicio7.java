@@ -18,8 +18,8 @@ public class Exercicio7 {
 			double somaAlturas = 0;
 			int contador = 0;
 			
-			long atletaMaisAlto = 0;
-			long atletaMaisBaixo = 0;
+			String atletaMaisAlto = "";
+			String atletaMaisBaixo = "";
 			
 			double alturaMaisAlto = Double.MIN_VALUE;
 			double alturaMaisBaixo = Double.MAX_VALUE;
@@ -28,9 +28,9 @@ public class Exercicio7 {
 			
 			while (i == 0) {
 				System.out.println("Digite o número inscrição: ");
-				long inscricao = input.nextLong();
+				String inscricao = input.next();
 				
-				if (inscricao == 0) {
+				if (inscricao.equals("0")) {
 					break;
 				}
 				
@@ -44,7 +44,7 @@ public class Exercicio7 {
 					alturaMaisAlto = altura;
 					atletaMaisAlto = inscricao;			
 					
-				}else if (altura < alturaMaisBaixo) {
+				}if (altura < alturaMaisBaixo) {
 					alturaMaisBaixo = altura;
 					atletaMaisBaixo = inscricao;
 				}
@@ -52,14 +52,13 @@ public class Exercicio7 {
 			}
 			if (contador > 0) {
 				double media = somaAlturas / contador;
-				System.out.println("Número da inscrição do atleta mais alto: " + atletaMaisAlto + " - " + def.format(alturaMaisAlto));
-				System.out.println("Número da inscrição do atleta mais baixo: " + atletaMaisBaixo + " - " + def.format(alturaMaisBaixo));
+				System.out.println("Número da inscrição do atleta mais alto: " + atletaMaisAlto + " altura dele: " + def.format(alturaMaisAlto));
+				System.out.println("Número da inscrição do atleta mais baixo: " + atletaMaisBaixo + " altura dele: " + def.format(alturaMaisBaixo));
 				
 				System.out.println("A altura média dos atletas é: " +  def.format(media));
 				
 				System.out.println("Quantidade de atletas: " + contador);
 				
 			}
-
 	}
 }

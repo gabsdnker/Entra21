@@ -14,7 +14,7 @@ public class Exercicio8 {
 		
 		int i = 0;
 		
-		while (i != 0) {
+		while (i == 0) {
 			System.out.println("Digite o nome do aluno (ou 'fim' para sair): ");
 			String nomeAluno = input.next();
 			

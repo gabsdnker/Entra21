@@ -12,9 +12,7 @@ public class Exercicio2 {
 		int elemento[] = new int[5];
 		double numMax = Double.MIN_VALUE;
 		double numMin = Double.MAX_VALUE;
-		double soma = 0;
-		double media = 0;
-		
+		double soma = 0;		
 		
 		for (int i = 0; i < elemento.length; i++) {
 			System.out.println("Digite o elemento: ");
@@ -27,8 +25,8 @@ public class Exercicio2 {
 				numMin = elemento[i];
 			} 
 			 soma += elemento[i];
-			 media = soma/5; 
 		}
+		double 	media = soma/elemento.length; 
 		System.out.println("Número máximo: " + numMax);
 		System.out.println("Número minímo: " + numMin);
 		System.out.println("Média: " + media);

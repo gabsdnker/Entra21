@@ -5,4 +5,5 @@
 - Exercícios Estruturas de Seleção
 - Exercícios While e For
 - Exercícios Vetores
+- Exercícios Matrizes
 - Pesquisa de exercícios extras (por conta propria)

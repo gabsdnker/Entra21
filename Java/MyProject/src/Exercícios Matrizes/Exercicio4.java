@@ -1,4 +1,4 @@
-
+//Autora: Gabrielli Danker
 public class Exercicio4 {
 
 	public static void main(String[] args) {
@@ -62,7 +62,7 @@ public class Exercicio4 {
 				quartosCasa = matriz[i][1];
 			}
 		}
-		System.out.println("A casa mais cara tem " + quartosCasa + " quartos");
+		System.out.println("A casa mais cara tem: " + quartosCasa + " quartos");
 		
 		//Diferença de tamanho da casa mais quartos com a casa menos quartos
 		int menorTamanho = matriz[0][0];
@@ -82,18 +82,19 @@ public class Exercicio4 {
 			
 		}
 		int diferencaTamanho = maiorTamanho - menorTamanho;
-		System.out.println("A diferença de tamanho da casa maior e da casa menor é " + diferencaTamanho);
+		System.out.println("A diferença de tamanho da casa maior e da casa menor é: " + diferencaTamanho);
 		
 		//Media tamanho que vale mais que 300.000mil
-		int mediaTamanho = 0;
-		int valorMaior = matriz[0][2];
+		double somaTamanhos = 0;
 		int precoCasa = matriz[0][2];
 		
 		for(int i = 0; i < matriz.length; i ++) {
 			if(precoCasa > 300000) {
-				
+				somaTamanhos += matriz[i][0];
 			}
 		}
+		double mediaTamanho = somaTamanhos/matriz.length;
+		System.out.println("Média de tamanho das casas que valem mais de 300.000mil é: " + mediaTamanho);
 		
 	}
 

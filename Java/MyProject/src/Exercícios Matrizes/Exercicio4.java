@@ -1,4 +1,4 @@
-//Autora: Gabrielli Danker
+
 public class Exercicio4 {
 
 	public static void main(String[] args) {
@@ -43,11 +43,14 @@ public class Exercicio4 {
 		System.out.println("A média dos preços das casas é: R$ " + mediaPreco + ",00");
 		
 		//Menor preços
-		int menorPreco = matriz[0][2];
+		int menorCasa = Integer.MAX_VALUE;
+		int menorPreco= 0;
 		
 		for(int i = 0; i < matriz.length; i ++) {
-			if(matriz[i][2] < menorPreco) {
+			if(matriz[i][0] < menorCasa) {
+				menorCasa = matriz[i][0];
 				menorPreco = matriz[i][2];
+				
 			}
 		}
 		System.out.println("A menor casa custa: R$ " + menorPreco + ",00");
@@ -86,14 +89,15 @@ public class Exercicio4 {
 		
 		//Media tamanho que vale mais que 300.000mil
 		double somaTamanhos = 0;
-		int precoCasa = matriz[0][2];
+		int contador= 0;
 		
 		for(int i = 0; i < matriz.length; i ++) {
-			if(precoCasa > 300000) {
+			if(matriz[i][2] > 300000) {
 				somaTamanhos += matriz[i][0];
+				contador ++;
 			}
 		}
-		double mediaTamanho = somaTamanhos/matriz.length;
+		double mediaTamanho = somaTamanhos/contador;
 		System.out.println("Média de tamanho das casas que valem mais de 300.000mil é: " + mediaTamanho);
 		
 	}

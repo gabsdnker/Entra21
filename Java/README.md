@@ -6,4 +6,5 @@
 - Exercícios While e For
 - Exercícios Vetores
 - Exercícios Matrizes
+- Exercícios Métodos
 - Pesquisa de exercícios extras (por conta propria)

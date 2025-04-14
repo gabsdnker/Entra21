@@ -14,12 +14,11 @@ public class Av1Q1 {
 		
 		for( i = 0; i < array.length; i ++) {
 			System.out.println("Digite o valor do lado " + (i + 1) + ": ");
-			array[i] = input.nextDouble();
-			
+			array[i] = input.nextDouble();	
 		}
-		if ((array[0] == array[1]) && (array[0] == array[2]) && (array[1] == array[2])) {
+		if ((array[0] == array[1]) && (array[0] == array[2])) {
 			System.out.println("Equilátero");
-		} else if (((array[0] == array[1]) && (array[1] != array[2])) || ((array[0] == array[2]) && (array[1] != array[2]))) {
+		} else if ((array[0] == array[1]) || (array[0] == array[2]) || (array[1] == array[2])) {
 			System.out.println("Isósceles");
 		} else {
 			System.out.println("Escaleno");

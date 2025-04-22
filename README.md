@@ -14,7 +14,7 @@
 - Introdução ao JavaScript - 32 horas
 - Introdução ao Spring Framework - 40 horas
 - Java para Web: Fundamentos - 32 horas
-- Metodologias Ágeis para TI - 8 horas ✔️
-- Programação Orientada a Objetos (OOP) - 32 horas
+- Metodologias Ágeis para TI - 8 horas  ✅
+- Programação Orientada a Objetos (OOP) - 32 horas ✔️
 - Projeto Final - 28 horas
 - Tecnologias Emergentes e IA - 32 horas

@@ -33,3 +33,24 @@ public class Main {
         System.out.println( civic.modelo + "Velocidade máxima: " + civic.velMax + " km/h");
     }
 }
+
+//Métodos em classes
+
+public class Quadrilatero{
+    double largura;
+    double altura;
+
+    public double calcularArea(){
+        return largura * altura;
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        Quadrilatero q1 = new Quadrilatero();
+        q1.altura = 2;
+        q1.largura = 3;
+    
+        System.out.println(q1.calcularArea());
+    }
+}

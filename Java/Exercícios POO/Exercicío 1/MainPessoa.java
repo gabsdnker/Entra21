@@ -1,3 +1,5 @@
+//Autora: Gabrielli Danker
+//Classe main da classe Pessoa
 public class MainPessoa {
     public static void main(String[] args) {
         Pessoa alexandre = new Pessoa();

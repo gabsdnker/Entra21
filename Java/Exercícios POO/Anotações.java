@@ -11,7 +11,7 @@
    -Velocidade Maxima
    -Cor  */
 
-public class Veiculo{
+   public class Veiculo{
     String modelo;
     double comprimento;
     int passageiros;

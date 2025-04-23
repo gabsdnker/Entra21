@@ -8,9 +8,8 @@ public class Exercicio17{
     public static char verificarCaractere(String palavra){
         if (palavra.length() % 2 == 0){
             return palavra.charAt(0);
-        } else{
-            return palavra.charAt(1);
-        }
+        } 
+        return palavra.charAt(1); 
     }
 
     public static void main(String[] args) {

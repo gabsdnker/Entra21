@@ -7,4 +7,5 @@
 - Exercícios Vetores
 - Exercícios Matrizes
 - Exercícios Métodos
+- Exercícios Programação Orientada a Objetos
 - Pesquisa de exercícios extras (por conta propria)

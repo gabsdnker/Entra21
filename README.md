@@ -5,7 +5,7 @@
 #### Matérias do curso:
 
 - Desempenho Geral - 480 horas
-- Empreendedorismo Inovação e Desenvolvimento Profissional -  80 horas
+- Empreendedorismo Inovação e Desenvolvimento Profissional -  80 horas  ✔️
 - Fundamentos de HTML e CSS - 28 horas
 - Fundamentos de Programação com Java - 40 horas ✅
 - Git e GitHub - 12 horas

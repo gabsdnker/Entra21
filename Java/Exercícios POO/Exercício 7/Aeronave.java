@@ -1,18 +1,4 @@
-//Aluna: Gabrielli Danker
-
-/*Faça uma classe chamada Aeronave.
-Com os atributos:
-• Modelo
-• Passageiros
-• Velocidade máxima
-• Capacidade de combustível
-• Queima de combustível por minuto
-Crie 4 objetos de sua preferência.
-Calcule:
-a) Qual aeronave leva o maior número de passageiros?
-b) Qual das aeronaves pode ficar no ar por mais tempo?
-c) Considerando que os aviões estão em velocidade máxima, qual deles consegue voar mais 
-longe?*/
+//Autora: Gabrielli Danker
 
 public class Aeronave {
     public String modelo;
@@ -20,6 +6,14 @@ public class Aeronave {
     public double velocidadeMax;
     public double capacidadeCombustivel;
     public double queimaCombustivelMin;
+
+    public Aeronave(String modelo, int passageiros, double  velocidadeMax, double capacidadeCombustivel, double queimaCombustivelMin){
+        this.modelo = modelo;
+        this.passageiros = passageiros;
+        this.velocidadeMax = velocidadeMax;
+        this.capacidadeCombustivel = capacidadeCombustivel;
+        this.queimaCombustivelMin = queimaCombustivelMin;
+    }
 
     public double tempoVoo(){
         return capacidadeCombustivel / (queimaCombustivelMin * 60);

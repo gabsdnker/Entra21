@@ -43,5 +43,7 @@ public class Contribuinte {
         }
     }
 
-    public double impostoPagar = rendaAnual * aliquota();
+    public double impostoPagar() {
+        return rendaAnual * aliquota();
+    }
 }

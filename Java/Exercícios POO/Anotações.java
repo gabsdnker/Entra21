@@ -11,7 +11,7 @@
    -Velocidade Maxima
    -Cor  */
 
-   public class Veiculo{
+/*public class Veiculo{
     String modelo;
     double comprimento;
     int passageiros;
@@ -32,11 +32,11 @@ public class Main {
 
         System.out.println( civic.modelo + "Velocidade máxima: " + civic.velMax + " km/h");
     }
-}
+}*/
 
 //Métodos em classes
 
-public class Quadrilatero{
+/*public class Quadrilatero{
     double largura;
     double altura;
 
@@ -53,4 +53,34 @@ public class Main {
     
         System.out.println(q1.calcularArea());
     }
-}
+}*/
+
+//Método Construtor
+
+//Terá o mesmo nome da classe
+//Toda classe tem um construtor padrão
+//Podem ser criados vários constriturores 
+
+/*public class Veiculo{
+    //atributos de classe
+    String modelo;
+    double comprimento;
+    int passageiros;
+    int velMax;
+    String cor;
+}*/
+
+//contrutor 
+/*public Veiculo(String modelo, double comprimento, int passageiros, int velMax, String cor){
+    this.modelo = modelo;
+    this.comprimento = comprimento;
+    this.passageiros = passageiros;
+    this.velMax = velMax;
+    this.cor = cor;
+}*/
+
+/*public class Main {
+    public static void main(String[] args){
+    Veiculo civic = new Veiculo("Civic", 10.6, 5, 200, "Preto");
+    }
+}*/

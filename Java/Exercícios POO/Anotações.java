@@ -77,10 +77,11 @@ public class Main {
     this.passageiros = passageiros;
     this.velMax = velMax;
     this.cor = cor;
-}*/
+}
 
-/*public class Main {
+public class Main {
     public static void main(String[] args){
     Veiculo civic = new Veiculo("Civic", 10.6, 5, 200, "Preto");
     }
 }*/
+

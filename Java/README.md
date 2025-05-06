@@ -8,4 +8,6 @@
 - Exercícios Matrizes
 - Exercícios Métodos
 - Exercícios Programação Orientada a Objetos
+- Exercícios ArrayList
+- Exercícios Relacionamento Entre Objetos
 - Pesquisa de exercícios extras (por conta propria)

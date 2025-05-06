@@ -8,50 +8,49 @@ c) Qual o total de imposto pago entre os 5 contribuintes?*/
 
 public class MainContribuinte {
     public static void main(String[] args) {
-        Contribuinte[] contribuintes = new Contribuinte[5];
+        Contribuinte c1 = new Contribuinte("Henrique", "11111111111", "sc", 2000);
+		Contribuinte c2 = new Contribuinte("Jorge", "11111111111", "sc", 5000);
+		Contribuinte c3 = new Contribuinte("Carlos", "11111111111", "sc", 10000);
+		Contribuinte c4 = new Contribuinte("Gustavo", "11111111111", "sc", 26000);
+		Contribuinte c5 = new Contribuinte("Maria", "11111111111", "sc", 40000);
 
-        contribuintes[0] = new Contribuinte("Gabrielli Danker", "156.846.953-54", "SC", 50000.0);
-        contribuintes[1]= new Contribuinte("Alexandre Degang", "156.956.456-56", "PR", 10000.0);
-        contribuintes[2] = new Contribuinte("Meri Kuster", "144.569.966-25", "RS", 35000.0);
-        contribuintes[3] = new Contribuinte("Sarah Danker", "365.985.423-56", "SC", 3000.0);
-        contribuintes[4] = new Contribuinte("Aline Degang", "145.956.652-26", "PR", 25000.0);
+		Contribuinte vetor[] = { c1, c2, c3, c4, c5 };
 
-        //a) Quem paga mais imposto?
-        System.out.println("a) Quem paga mais imposto?");
-        Double maisPaga = Double.MIN_VALUE;
-        String nomeMaisPaga = " ";
+		// Quem mais paga imposto
 
-        for (int i = 0; i < contribuintes.length; i++) {
-            double imposto = contribuintes[i].impostoPagar();
-            if(contribuintes[i].impostoPagar() > maisPaga){
-                maisPaga = imposto;
-                nomeMaisPaga = contribuintes[i].nome;
-            }
-        }
-        System.out.println(nomeMaisPaga);
+		double maiorImposto = 0;
+		Contribuinte contMaisImposto = null;
 
-        //b) Quem paga menos imposto?
-        System.out.println("b) Quem paga menos imposto?");
-        Double menosPaga = Double.MAX_VALUE;
-        String nomeMenosPaga = " ";
+		for (int i = 0; i < vetor.length; i++) {
+			if (vetor[i].calcularImposto() > maiorImposto) {
+				maiorImposto = vetor[i].calcularImposto();
+				contMaisImposto = vetor[i];
+			}
+		}
 
-        for (int i = 0; i < contribuintes.length; i++) {
-            double imposto = contribuintes[i].impostoPagar();
-            if(contribuintes[i].impostoPagar() < menosPaga){
-                menosPaga = imposto;
-                nomeMenosPaga = contribuintes[i].nome;
-            }
-        }
-        System.out.println(nomeMenosPaga);
+		System.out.println(contMaisImposto);
 
-        //c) Qual o total de imposto pago entre os 5 contribuites?
-        System.out.println("c) Qual o total de imposto pago entre os 5 contribuites?");
-        double totalImposto = 0;
+		// Quem menos paga imposto
 
-        for (int i = 0; i < contribuintes.length; i++) {
-            double imposto = contribuintes[i].impostoPagar();
-            totalImposto += imposto;
-        }
-        System.out.println(totalImposto);
+		double menorImposto = Double.MAX_VALUE;
+		Contribuinte contMenosImposto = null;
+
+		for (int i = 0; i < vetor.length; i++) {
+			if (vetor[i].calcularImposto() < menorImposto) {
+				menorImposto = vetor[i].calcularImposto();
+				contMenosImposto = vetor[i];
+			}
+		}
+
+		System.out.println(contMenosImposto);
+
+		// Qual o total de imposto pago entre os 5 contribuintes?
+
+		double totalImposto = 0;
+		for (int i = 0; i < vetor.length; i++) {
+			totalImposto += vetor[i].calcularImposto();
+		}
+
+		System.out.println("O leão está muito feliz com R$" + totalImposto);
     }
 }

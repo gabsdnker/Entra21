@@ -25,12 +25,22 @@ public class MainAeronave {
         String nomeMaiorAutonomia = " ";
 
         for (int i = 0; i < vetor.length; i++) {
-            
+            if(vetor[i].tempoVoo() > maiorAutonomia){
+                maiorAutonomia = vetor[i].tempoVoo();
+                nomeMaiorAutonomia = vetor[i].getModelo();
+            }
         }
 
         // Considerando que os aviões estão em velocidade máxima, qual deles consegue voar mais longe?
         double maiorDistancia = Double.MIN_VALUE;
         String nomeMaiorDistancia = " ";
+
+        for (int i = 0; i < vetor.length; i++) {
+            if(vetor[i].distanciaMaxima() > maiorDistancia){
+                maiorDistancia = vetor[i].distanciaMaxima();
+                nomeMaiorDistancia = vetor[i].modelo;
+            }
+        }
         
         System.out.println("a) Qual aeronave leva o maior número de passageiros? " + nomeAeronaveMaisPassageiros);
         System.out.println("b) Qual das aeronaves pode ficar no ar por mais tempo? " + nomeMaiorAutonomia);

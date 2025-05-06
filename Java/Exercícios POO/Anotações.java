@@ -70,7 +70,7 @@ public class Main {
     String cor;
 }*/
 
-//contrutor 
+//Contrutor 
 /*public Veiculo(String modelo, double comprimento, int passageiros, int velMax, String cor){
     this.modelo = modelo;
     this.comprimento = comprimento;
@@ -85,3 +85,16 @@ public class Main {
     }
 }*/
 
+//SET = definir valor/ válidação
+//GET= pegar valor
+
+//Método Exceção
+/*int vetor[] = new int[5];
+
+vetor[5] = 20;*/
+
+/*Nomeclatura Java
+ * Uma exceção é lançada 
+ * 
+ * 
+ */

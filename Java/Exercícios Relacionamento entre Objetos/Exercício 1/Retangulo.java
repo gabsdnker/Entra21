@@ -1,5 +1,7 @@
+//Autora: Gabrielli Danker
 
 public class Retangulo {
+    //Atributos
     private double altura;
     private double largura;
 
@@ -22,6 +24,6 @@ public class Retangulo {
 
     @Override
     public String toString(){
-        return "Retangulo "
+        return "[altura= " + altura + "], [largura= " + largura + "], [Area= " + calcularArea() + "], [Perímetro= " + calcularPerimetro() + "]"; 
     }
 }

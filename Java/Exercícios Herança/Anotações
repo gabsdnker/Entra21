@@ -1,0 +1,131 @@
+<Datas>
+
+- classe LocalDate
+- Não é instanciada 
+- É imutável e oferece diversas funcionalidades
+- Lançará uma execução caso a data não exista
+- Guarda informações na ordem de ano, mês, dia (dd/MM/yyyy)
+- Sem hora e sem fuso horário
+
+LocalDate data1 = LocalDate.of(2001, 10, 11); //Criação de uma data específica
+LocalDate data2= LocalDate.now(); //Criação da data de agora
+
+sysout(data1.getDayOfMonth()); //Retorna o dia do mês, também funciona para ano, mês e dia da semana
+
+data1.isLeapYear();
+
+- Validação
+
+public void setDataNascimento(LocalData dataNascimento){
+    if(dataNascimento.isAfter(LocalDate.now())){
+        throw new IllegalArgumentException ("Data inválida");
+    }
+}
+
+<Herança>
+
+public class Veiculo{
+    String marca;
+    String modelo;
+    int qtdPassageiros;
+    int ano;
+    double velMax;
+}
+
+public class Aviao extends Veiculo{
+    int qtdMotores;
+    int qtdPilotos;
+}
+
+- Veiculo é pai de Aviao
+- Aviao é filho de Veiculo
+- Veiculo é uma super classe (superclass)
+- Aviao é uma sub classe (subclass)
+
+- Contrutores
+
+//CLasse pai
+public class Veiculo{
+    String marca;
+    String modelo; 
+    int qtdPassageiros;
+    int ano;
+    double velMax;
+
+    public Veiculo(String marca, String modelo, int qtdPassageiros, int ano, double velMax){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.qtdPassageiros = qtdPassageiros;
+        this.ano = ano;
+        this.velMax = velMax;
+    }
+}
+
+//Classe filho
+public class Carro extends Veiculo{
+    int numPortas;
+    double tamPortaMalas;
+
+    public Carro(String marca, String modelo, int qtdPassageiros, int ano, double velMax, int numPortas, double tamPortasMalas){
+        super(marca, modelo, qtdPassageiros, ano, velMax); //Chama o construtor da classe pai
+        this.numPortas = numPortas;
+        this.tamPortaMalas = tamPortaMalas;
+    }
+}
+
+- Métodos
+
+//Na classe Veiculo
+//Todas as classes que utilizao Veiculo podem utilizar esse método
+public String acelerar(){
+    return "Acelerando";
+}
+
+//Na classe Carro 
+//Método exclusivo de Carro
+public String abrirPorta(){
+    return "Abrindo a porta";
+}
+
+- Diagrama
+
+- A herança na UML é representada por uma linha contínua  com um triângulo apontado da sub classe para a super classe.
+- Atributos e métodos das super classe não são mencionadas nas sub classes.
+
+- Como identificar uma Herença
+
+- A classe que eu classifiquei como filho é um tipo do pai?
+- Há comportamentos ou atributos em comum?
+
+            |    Apartamento     |
+            | - numero: int      |
+            | -numCamas: int     |
+                
+|   ApartamentoLuxo   |         |   ApartamentoFamiliar   |
+| -numBanheiros:int   |         |   -temCozinha:boolean   |
+
+
+- Classes Abstratas
+
+-Classe que não pode ser instanciada
+-Serve como classe base para outras classes que vão herda-las
+-Podem conter:
+    -Metodos abstratos: sem corpo, apenas a assinatura
+    -Metodos normais: com implementação completa
+
+public abstract class MinhaClasse{
+
+}
+
+[Métodos abstratos]
+- Não podem ser private, final ou static
+- Obrigatoriamente terão que ser implementados(sobrescritos) nas classes filhos
+- Métodos abstratos não terão corpo na classe abstrata
+- Podem ser criados somente  nas classes abstratas
+
+- Como idetificar um método abstrato?
+    -A implementação é diferente dependendo da classe?
+    -A lógica do método depende totalmente da subclasse?
+
+[Diagrama de clases abstratas]
+-Classes e métodos abstratos são identificados pela sua notação em itálico

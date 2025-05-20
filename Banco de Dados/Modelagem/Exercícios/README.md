@@ -2,6 +2,8 @@
 
 Em uma companhia aérea: um avião é usado em vários voos. Um voo é atribuído a somente um avião.
 
+<img src="">
+
 ## Exercício 2
 
 Em um sistema de reserva de hotel: um hotel possui vários quartos. As reservas são feitas para 

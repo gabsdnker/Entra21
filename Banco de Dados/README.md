@@ -67,20 +67,25 @@ Regras de registros são linhas
   -> Não nulo
     
 - Foreign Key (FK)
+  
   -> Referência da PK me outra tabela.
 
 ### Relacionamentos
 
 - São elas:
+  
   -> 1 para 1
+  
     - Ambas tabelas podem ter somente uma instância em ambos os lados.
     - A maioria das relações "1 para 1" são definidas por regras de negócios.
       
   -> 1 para muitos
+  
     - A chave primária contêm somente uma instância que se relaciona a uma ou muitas instâncias da outra tabela.
     - A chave primária da tabela do "lado 1" se torna uma chave estrangeira na tabela do "lado muitos".
       
   -> Muitos para muitos
+  
     - Cada instância em ambas as tabelas podem se relacionar a qualquer número de instâncias em outra tabela.
     - Esses relacionamentos requerem uma terceira tabela, chamada de tabela de associação.
 

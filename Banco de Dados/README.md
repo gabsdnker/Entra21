@@ -31,8 +31,11 @@ Regras de registros são linhas
 
 - SGBDR (Sistema Gerenciador de Banco de Dados Relacional) é o mais utilizado hoje em dia.
 - Arquitetura de 3 níveis:
+  
       -> Nível externo (visão do usuário)
+  
       -> Nível conceitual (visão global do banco de dados)
+  
       -> Nível interno (aonde está fisicamente as informações do banco de dados)
 
 ## Modelagem
@@ -40,8 +43,11 @@ Regras de registros são linhas
 ### MER (Modelo entidade-relacionamento)
 
 - Para determinar se uma situação deve ser uma entidade:
+  
        -> Há necessidade de guardar informações sobre cada objeto?
+  
        -> Há mais de um objeto desse tipo?
+  
        -> É possível identificar cada objeto unicamente?
 
 ### Tabela
@@ -54,6 +60,7 @@ Regras de registros são linhas
 ### Chaves Primárias e Estrangeiras
 
 -  Primary Key (PK)
+
   -> Identificador único e obrigatório da tabela
   -> Imutável
   -> Não nulo

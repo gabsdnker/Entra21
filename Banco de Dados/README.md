@@ -25,6 +25,7 @@ Definição
 |Nome | CPF | E-mail|
 
 Atributos são colunas
+
 Regras de registros são linhas
 
 ## Sistema Gerenciador de Banco de Dados

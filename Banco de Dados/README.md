@@ -78,5 +78,21 @@ Regras de registros são linhas
 
 ### Normalização
 
+- Segue um conjunto de regras chamadas formas normais (FN).
+  -> 1º Forma Normal (1FN)
+        - Também chamada de regra de atomicidade.
+        - Cada célula da tabela deve conter apenas um único valor.
+        - Cada coluna deve ter um nome único.
+
+  -> 2º Forma Normal (2FN)
+        -  Uma tabela está na 2FN se:
+              -> Ela já esta na 1FN.
+              -> Todo atributo não-chave é totalmente dependente funcionalmente da chave primária.
+  
+  -> 3º Forma Normal (3FN)
+        - Uma tabela está na 3FN se:
+              -> Elá já esta na 2FN.
+              -> Todos os atributos não-chave dependem diretamente da chave primária, não de outro atributo não-chave.
+
 
     

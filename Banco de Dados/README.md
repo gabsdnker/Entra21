@@ -62,15 +62,15 @@ Regras de registros são linhas
 
 -  Primary Key (PK)
 
-  -> Identificador único e obrigatório da tabela
-  
-  -> Imutável
-  
-  -> Não nulo
+    -> Identificador único e obrigatório da tabela
+    
+    -> Imutável
+    
+    -> Não nulo
     
 - Foreign Key (FK)
   
-  -> Referência da PK me outra tabela.
+    -> Referência da PK me outra tabela.
 
 ### Relacionamentos
 

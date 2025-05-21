@@ -23,7 +23,7 @@ departamento. Um departamento pode ter vários funcionários, mas tem somente um
 Em um Blog: Cada autor pode escrever vários posts. Os posts podem ter vários comentários, 
 mas cada comentário pertence a somente um post.
 
-<img src="https://github.com/gabsdnker/Entra21/blob/a5494992d1bfc842d3fe7a0738d57d41f55827f0/Banco%20de%20Dados/Modelagem/Imagens/exercicio4.png" alt="Exercicio4" width="400" height="300">
+<img src="https://github.com/gabsdnker/Entra21/blob/a5494992d1bfc842d3fe7a0738d57d41f55827f0/Banco%20de%20Dados/Modelagem/Imagens/exercicio4.png" alt="Exercicio4" width="450" height="300">
 
 ## Exercício 5
 

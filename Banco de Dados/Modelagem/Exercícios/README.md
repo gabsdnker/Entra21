@@ -30,7 +30,7 @@ mas cada comentário pertence a somente um post.
 Uma plataforma online conecta professores e alunos para cursos e aulas: Alunos fazem 
 cursos, assistem aulas e enviam atividades. Professores lecionam as aulas e criam atividades.
 
-<img src="" alt="Exercicio5" width="400" height="300">
+<img src="https://github.com/gabsdnker/Entra21/blob/8ba1c3986a29f97e50ba74fab3af67723da2648c/Banco%20de%20Dados/Modelagem/Imagens/exercicio5.png" alt="Exercicio5" width="400" height="300">
 
 ## Exercício 6
 

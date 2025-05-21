@@ -2,7 +2,7 @@
 
 Em uma companhia aérea: um avião é usado em vários voos. Um voo é atribuído a somente um avião.
 
-<img src="" alt="Exercicio1" width="600" height="250">
+<img src="https://github.com/gabsdnker/Entra21/blob/a0f0af6a77ae5dc05640c0ec34f2cca82366a761/Banco%20de%20Dados/Modelagem/Imagens/exercicio1.png" alt="Exercicio1" width="600" height="250">
 
 ## Exercício 2
 

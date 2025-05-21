@@ -45,7 +45,7 @@ palestrantes. Os participantes se inscrevem em eventos e podem assistir a vária
 Em um sistema escolar: Uma escola tem várias turmas. Cada turma tem um professor 
 responsável. Cada turma pode ter vários alunos, mas um aluno pertence a somente uma turma.
 
-<img src="" alt="Exercicio7" width="400" height="300">
+<img src="https://github.com/gabsdnker/Entra21/blob/298899f407a0a7df1f91cefd22461e3b9dc122d0/Banco%20de%20Dados/Modelagem/Imagens/exercicio7.png" alt="Exercicio7" width="400" height="300">
 
 ## Exercício 8
 

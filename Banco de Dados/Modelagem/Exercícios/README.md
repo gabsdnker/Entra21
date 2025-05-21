@@ -16,7 +16,7 @@ um único quarto, mas um quarto pode ter várias reservas ao longo do tempo.
 Em um sistema de funcionários e departamentos: cada funcionário trabalha em um único 
 departamento. Um departamento pode ter vários funcionários, mas tem somente um gerente.
 
-<img src="https://github.com/gabsdnker/Entra21/blob/baa4d6119130d47b933093c75124cd2606deefca/Banco%20de%20Dados/Modelagem/Imagens/exercicio3.png" alt="Exercicio3" width="400" height="300">
+<img src="https://github.com/gabsdnker/Entra21/blob/baa4d6119130d47b933093c75124cd2606deefca/Banco%20de%20Dados/Modelagem/Imagens/exercicio3.png" alt="Exercicio3" width="400" height="400">
 
 ## Exercício 4
 

@@ -14,42 +14,58 @@ um único quarto, mas um quarto pode ter várias reservas ao longo do tempo.
 ## Exercício 3
 
 Em um sistema de funcionários e departamentos: cada funcionário trabalha em um único 
-departamento. Um departamento pode ter vários funcionários, mas tem somente um gerente
+departamento. Um departamento pode ter vários funcionários, mas tem somente um gerente.
+
+<img src="" alt="Exercicio3" width="400" height="300">
 
 ## Exercício 4
 
 Em um Blog: Cada autor pode escrever vários posts. Os posts podem ter vários comentários, 
-mas cada comentário pertence a somente um post
+mas cada comentário pertence a somente um post.
+
+<img src="" alt="Exercicio4" width="400" height="300">
 
 ## Exercício 5
 
 Uma plataforma online conecta professores e alunos para cursos e aulas: Alunos fazem 
-cursos, assistem aulas e enviam atividades. Professores lecionam as aulas e criam atividades
+cursos, assistem aulas e enviam atividades. Professores lecionam as aulas e criam atividades.
+
+<img src="" alt="Exercicio5" width="400" height="300">
 
 ## Exercício 6
 
 Uma empresa organiza eventos e conferências. Cada evento ocorre em um local e tem 
 palestras. Palestrantes podem dar várias palestras, e cada palestra pode ter vários 
-palestrantes. Os participantes se inscrevem em eventos e podem assistir a várias palestras
+palestrantes. Os participantes se inscrevem em eventos e podem assistir a várias palestras.
+
+<img src="" alt="Exercicio6" width="400" height="300">
 
 ## Exercício 7
 
 Em um sistema escolar: Uma escola tem várias turmas. Cada turma tem um professor 
-responsável. Cada turma pode ter vários alunos, mas um aluno pertence a somente uma turma
+responsável. Cada turma pode ter vários alunos, mas um aluno pertence a somente uma turma.
+
+<img src="" alt="Exercicio7" width="400" height="300">
 
 ## Exercício 8
 
 Em um e-commerce: clientes vip tem descontos em itens. Itens pertencem a somente uma 
-categoria
+categoria.
+
+<img src="" alt="Exercicio8" width="400" height="300">
 
 ## Exercício 9
 
 Em um restaurante: um cliente pode fazer vários pedidos, com cada pedido pertencendo a 
 apenas um cliente. Um pedido pode conter vários itens e um item pode estar presente em 
-vários pedidos. Cada item pertence a somente uma categoria
+vários pedidos. Cada item pertence a somente uma categoria.
+
+<img src="" alt="Exercicio9" width="400" height="300">
 
 ## Exercício 10
 
 Em um sistema de empresas e grupos empresariais: um grupo de empresários possui várias 
 empresas, uma empresa pode pertencer a vários grupos de empresários. As empresas
 possuem várias filiais. Cada filial produz itens que nenhuma outra filial produz.
+
+<img src="" alt="Exercicio10" width="400" height="300">

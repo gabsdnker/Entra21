@@ -16,7 +16,7 @@ um único quarto, mas um quarto pode ter várias reservas ao longo do tempo.
 Em um sistema de funcionários e departamentos: cada funcionário trabalha em um único 
 departamento. Um departamento pode ter vários funcionários, mas tem somente um gerente.
 
-<img src="https://github.com/gabsdnker/Entra21/blob/baa4d6119130d47b933093c75124cd2606deefca/Banco%20de%20Dados/Modelagem/Imagens/exercicio3.png" alt="Exercicio3" width="400" height="500">
+<img src="https://github.com/gabsdnker/Entra21/blob/baa4d6119130d47b933093c75124cd2606deefca/Banco%20de%20Dados/Modelagem/Imagens/exercicio3.png" alt="Exercicio3" width="400" height="400">
 
 ## Exercício 4
 
@@ -38,7 +38,7 @@ Uma empresa organiza eventos e conferências. Cada evento ocorre em um local e t
 palestras. Palestrantes podem dar várias palestras, e cada palestra pode ter vários 
 palestrantes. Os participantes se inscrevem em eventos e podem assistir a várias palestras.
 
-<img src="https://github.com/gabsdnker/Entra21/blob/d83ad43c3ec43059e16edf40efa9216e14bdb90b/Banco%20de%20Dados/Modelagem/Imagens/exercicio6.png" alt="Exercicio6" width="400" height="300">
+<img src="https://github.com/gabsdnker/Entra21/blob/d83ad43c3ec43059e16edf40efa9216e14bdb90b/Banco%20de%20Dados/Modelagem/Imagens/exercicio6.png" alt="Exercicio6" width="400" height="400">
 
 ## Exercício 7
 

@@ -38,7 +38,7 @@ Uma empresa organiza eventos e conferências. Cada evento ocorre em um local e t
 palestras. Palestrantes podem dar várias palestras, e cada palestra pode ter vários 
 palestrantes. Os participantes se inscrevem em eventos e podem assistir a várias palestras.
 
-<img src="https://github.com/gabsdnker/Entra21/blob/d83ad43c3ec43059e16edf40efa9216e14bdb90b/Banco%20de%20Dados/Modelagem/Imagens/exercicio6.png" alt="Exercicio6" width="400" height="400">
+<img src="https://github.com/gabsdnker/Entra21/blob/d83ad43c3ec43059e16edf40efa9216e14bdb90b/Banco%20de%20Dados/Modelagem/Imagens/exercicio6.png" alt="Exercicio6" width="500" height="300">
 
 ## Exercício 7
 

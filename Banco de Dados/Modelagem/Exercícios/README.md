@@ -9,7 +9,7 @@ Em uma companhia aérea: um avião é usado em vários voos. Um voo é atribuíd
 Em um sistema de reserva de hotel: um hotel possui vários quartos. As reservas são feitas para 
 um único quarto, mas um quarto pode ter várias reservas ao longo do tempo.
 
-<img src="https://github.com/gabsdnker/Entra21/blob/ea120c0e743c1dfaccdd0aa61ff67140fafb3fb0/Banco%20de%20Dados/Modelagem/Imagens/exercicio2.png" alt="Exercicio2" width="400" height="250">
+<img src="https://github.com/gabsdnker/Entra21/blob/ea120c0e743c1dfaccdd0aa61ff67140fafb3fb0/Banco%20de%20Dados/Modelagem/Imagens/exercicio2.png" alt="Exercicio2" width="400" height="300">
 
 ## Exercício 3
 

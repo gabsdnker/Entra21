@@ -17,6 +17,7 @@
 - IDE HeidiSQL
   - https://www.heidisql.com/download.php?download=portable-64
   - 64 bit
+  - Notepad++
  
 - Criação de tabela
 

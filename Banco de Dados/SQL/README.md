@@ -20,7 +20,8 @@
  
 - Criação de tabela
 
-CREATE TABLE nome_tabela(
-  cd_pessoa INTEGER;
-  nm_pessoa VARCHAR(50);
-)
+CREATE TABLE pessoa(
+	cd_pessoa INTEGER,
+	nm_pessoa VARCHAR(50),
+	fl_estado_civil CHAR(1)
+	);

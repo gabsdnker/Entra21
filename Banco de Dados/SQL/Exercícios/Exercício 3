@@ -1,4 +1,5 @@
 A partir do exercício 2:
+
 a) Adicione uma coluna ds_cor(VARCHAR(25)) na tabela Veiculo para armazenar a cor do veículo
 
   ALTER TABLE veiculo

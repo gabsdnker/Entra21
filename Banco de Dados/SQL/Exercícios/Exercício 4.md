@@ -1,6 +1,6 @@
 Reconstrua o modelo abaixo colocando as Primary Keys e Foreign Keys nas tabelas, após isso, faça comandos de inserção para as tabelas, aproximadamente 10 registros por tabela:
 
-<img src="https://github.com/gabsdnker/Entra21/blob/74cf9d6ff6fe9af5e1488ce22ffdf80000f424ff/Banco%20de%20Dados/SQL/Exerc%C3%ADcios/Imagens/exercicio4sql.png" alt="Exercicio 4" width="600" height="250">
+<img src="https://github.com/gabsdnker/Entra21/blob/74cf9d6ff6fe9af5e1488ce22ffdf80000f424ff/Banco%20de%20Dados/SQL/Exerc%C3%ADcios/Imagens/exercicio4sql.png" alt="Exercicio 4" width="600" height="300">
 
 Após inserir nas tabelas:
 

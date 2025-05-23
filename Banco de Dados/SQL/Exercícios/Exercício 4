@@ -1,0 +1,13 @@
+Reconstrua o modelo abaixo colocando as Primary Keys e Foreign Keys nas tabelas, após isso, faça comandos de inserção para as tabelas, aproximadamente 10 registros por tabela:
+
+<img src="">
+
+Após inserir nas tabelas:
+
+a) Atualize a cor veículo com placa 'ABC1234' para 'Azul'
+
+b) Atualize o número de telefone do proprietário com código 10 para 47123456789
+
+c) Exclua todos os veículos com mais de 200 mil quilômetros rodados produzidos antes de 2010
+
+d) Desafio: Exclua todos os veículos em que a placa termine em '0'. Dica: Use o comando LIKE.

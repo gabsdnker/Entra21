@@ -1,4 +1,4 @@
-<img src="https://github.com/gabsdnker/Entra21/blob/a23856cb928a371c20c41b971f2f54001b7b02dc/Banco%20de%20Dados/SQL/Exerc%C3%ADcios/Imagens/exercicio2.sql.png" alt="Exercicio 2" width="600" height="400">
+<img src="https://github.com/gabsdnker/Entra21/blob/a23856cb928a371c20c41b971f2f54001b7b02dc/Banco%20de%20Dados/SQL/Exerc%C3%ADcios/Imagens/exercicio2.sql.png" alt="Exercicio 2" width="400" height="300">
     
     CREATE TABLE marca(
     cd_marca INTEGER,

@@ -35,11 +35,13 @@ CREATE TABLE pessoa(
 	VALUES(valor1, valor2, ...);
 
   	- Para inserir várias instâncias:
+  	  
   	  INSERT INTO pessoa(cd_pessoa, nm_pessoa, salaris)
   	  VALUES (1, 'João', 5000),
   	  (2, 'Mateus', 4000);
 
      	- Para deixar algum valor nulo:
+  	     
   	     INSERT INTO pessoa(cd_pessoa, nm_pessoa, salario)
   	     VALUES (1, 'João', 5000),
   	  	(2, 'Mateus', 4000),

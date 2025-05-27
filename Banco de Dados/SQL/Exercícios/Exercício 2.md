@@ -1,3 +1,5 @@
+<img src="" alt="Exercicio 2" width="400" height="200">
+    
     CREATE TABLE marca(
     cd_marca INTEGER,
     ds_marca VARCHAR(30));

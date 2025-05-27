@@ -2,6 +2,7 @@ Reconstrua o modelo abaixo colocando as Primary Keys e Foreign Keys nas tabelas,
 
 <img src="https://github.com/gabsdnker/Entra21/blob/74cf9d6ff6fe9af5e1488ce22ffdf80000f424ff/Banco%20de%20Dados/SQL/Exerc%C3%ADcios/Imagens/exercicio4sql.png" alt="Exercicio 4" width="600" height="300">
 
+            #CRIANDO TABELAS
             CREATE TABLE Combustivel(
             cd_combustivel INTEGER,
             ds_combustivel VARCHAR(30),
@@ -73,13 +74,53 @@ Reconstrua o modelo abaixo colocando as Primary Keys e Foreign Keys nas tabelas,
             cd_acessorio INTEGER,
             FOREIGN KEY (nr_placa) REFERENCES Veiculo (nr_placa),
             FOREIGN KEY (cd_acessorio) REFERENCES Acessorio (cd_acessorio));
+     
+            INSERT INTO cor(cd_cor, ds_cor)
+            VALUES (2, 'Verde');
+            INSERT INTO combustivel(cd_combustivel, ds_combustivel)
+            VALUES(2, 'Diesel');
+            INSERT INTO marca(cd_marca, ds_marca)
+            VALUES(2, 'Honda');
+            INSERT INTO localidade(cd_localidade, nm_localidade)
+            VALUES (2, 'Casa');
+            INSERT INTO acessorio(cd_acessorio, ds_acessorio)
+            VALUES (2, 'Cinto Rosa');
+            
+            INSERT INTO modelo(cd_modelo, ds_modelo)
+            VALUES (50,'Automático');
+            INSERT INTO proprietario(cd_proprietario, nm_proprietario, ds_logradouro, ds_complemento, ds_bairro, nr_telefone, ds_email, sg_uf)
+            VALUES (51, 'Gabriel', 'Avenida', 'Apartamento', 'São João', '4798756789', 'alguemaleatorio@gmail.com', 'SP');
+            
+            INSERT INTO veiculo(nr_placa, nr_ano_fab, nr_ano_mod, qt_km_rodado, qt_portas, ds_observacao)
+            VALUES ('ABC1234', 1998, 2000, 10, 4, 'Arranhado no parachoque');
+
+            #ATUALIZANDO A COR DO VEÍCULO COM PLACA 'ABC1234' PARA 'AZUL'
+            INSERT INTO Cor (cd_cor, ds_cor)
+            VALUES (3, 'Azul');
+            
+            UPDATE Veiculo
+            SET cd_cor = 3
+            WHERE nr_placa = 'ABC1234';
+
+            #ATUALIZANDO O NÚMERO DE TELEFONE DO PROPRIETÁRIO COM CÓDIGO 10 PARA 47123456789
+            UPDATE Proprietario
+            SET nr_telefone = '47123456789'
+            WHERE cd_proprietario = 51;
 
 Após inserir nas tabelas:
 
 a) Atualize a cor veículo com placa 'ABC1234' para 'Azul'
 
+            INSERT INTO Cor (cd_cor, ds_cor)
+            VALUES (3, 'Azul');
+            
+            UPDATE Veiculo
+            SET cd_cor = 3
+            WHERE nr_placa = 'ABC1234';
+
 b) Atualize o número de telefone do proprietário com código 10 para 47123456789
 
-c) Exclua todos os veículos com mais de 200 mil quilômetros rodados produzidos antes de 2010
+            UPDATE Proprietario
+            SET nr_telefone = '47123456789'
+            WHERE cd_proprietario = 1;
 
-d) Desafio: Exclua todos os veículos em que a placa termine em '0'. Dica: Use o comando LIKE.

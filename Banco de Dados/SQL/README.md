@@ -34,17 +34,17 @@ CREATE TABLE pessoa(
 	INSERT INTO nome_tabela (coluna1, coluna2, ...)
 	VALUES(valor1, valor2, ...);
 
-  	- Para inserir várias instâncias:
-  	  
-  	  INSERT INTO pessoa(cd_pessoa, nm_pessoa, salario)
-  	  VALUES (1, 'João', 5000),
-  	  (2, 'Mateus', 4000));
-
-     	- Para deixar algum valor nulo:
-  	     
-  	     INSERT INTO pessoa(cd_pessoa, nm_pessoa, salario)
-  	     VALUES (1, 'João', 5000),
-  	  	(2, 'Mateus', 4000),
+	- Para inserir várias instâncias:
+	
+		INSERT INTO pessoa(cd_pessoa, nm_pessoa, salario)
+		VALUES (1, 'João', 5000),
+		(2, 'Mateus', 4000));
+	
+	- Para deixar algum valor nulo:
+	
+		INSERT INTO pessoa(cd_pessoa, nm_pessoa, salario)
+		VALUES (1, 'João', 5000),
+		(2, 'Mateus', 4000),
 		(3, 'Marcas', NULL));
 
 # Restrição de Dados
@@ -212,7 +212,7 @@ SELECT
   - JOIN
 
 	- Usado para combinar linhas de 2 ou mais tabelas baseadas em uma coluna relacionada entre eles (normalmente atributos chaves).
-        - Por exemplo, se você possui uma tabela ``Departamento`` e uma tabela ``Funcionario``, pode realizar um join entre elas usando a coluna ``cd_departamento`` para exibir os pedidos de  cada funcionário juntamente com o nome do departamento que ele trabalha.
+	- Por exemplo, se você possui uma tabela ``Departamento`` e uma tabela ``Funcionario``, pode realizar um join entre elas usando a coluna ``cd_departamento`` para exibir os pedidos de  cada funcionário juntamente com o nome do departamento que ele trabalha.
 
   - INNER JOIN
 

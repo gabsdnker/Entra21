@@ -162,8 +162,8 @@ Reconstrua o modelo abaixo colocando as Primary Keys e Foreign Keys nas tabelas,
             (4, 4, 'Ana Paula Lima', 'Rua do Comércio', 'Sala 5', 'Centro', '47966665555', 'ana.paula@email.com', 'MG'),
             (5, 5, 'Fernanda Costa', 'Av. Atlântica', 'Cobertura', 'Beira Mar', '47955554444', 'fernanda.costa@email.com', 'RS');
             
-            INSERT INTO veiculo (nr_placa, cd_cor, cd_proprietario, cd_modelo, nr_ano_fab, nr_ano_mod, qt_km_rodado, qt_portas, ds_observacao) VALUES
-            ('ABC1234', 1, 1, 1, 2019, 2020, 55000, 4, 'Revisado recentemente.'),
+            INSERT INTO veiculo (nr_placa, cd_cor, cd_proprietario, cd_modelo, nr_ano_fab, nr_ano_mod, qt_km_rodado, qt_portas, ds_observacao) 
+            VALUES ('ABC1234', 1, 1, 1, 2019, 2020, 55000, 4, 'Revisado recentemente.'),
             ('XYZ2E45', 2, 2, 2, 2021, 2021, 23000, 2, 'Único dono, sem multas.'),
             ('JKL3F67', 3, 3, 3, 2018, 2019, 78000, 4, 'Pneus novos, IPVA pago.'),
             ('MNO4G89', 4, 4, 4, 2020, 2021, 41000, 4, 'Veículo de garagem.'),
@@ -188,7 +188,7 @@ Após inserir nas tabelas:
 
 a) Atualize a cor veículo com placa 'ABC1234' para 'Azul'
 
-             UPDATE Veiculo
+            UPDATE Veiculo
             SET cd_cor = 3
             WHERE nr_placa = 'ABC1234';
             

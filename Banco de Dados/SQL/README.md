@@ -134,4 +134,94 @@ CREATE TABLE pessoa(
      - Inserindo os valores com a restrição DEFAULT:
        
          INSERT INTO funcionario(nome, email, salario)
-   	 VALUES ('Carlos', 'email@email.com', 2000)); 
+   	 VALUES ('Carlos', 'email@email.com', 2000));
+
+# Seleção de Dados 
+
+SELECT
+- Utilizado para recuperar dados de uma ou mais tabelas.
+- Principal comando da linguagem
+- Estatísticas mostram que mais de 70% das operações em um SGBD relacional correspondem a consultas aos dados
+- Seleciona, restringe, projeta e agrupa dados de uma ou mais tabelas.
+- Gera diferentes visões sobre os mesmos dados.
+
+   Comandos:
+    -  O comando ``SELECT`` pode apresentar até seis cláusulas, sendo que duas delas são obrigatórias ``SELECT E FROM``
+ 
+      ``FROM`` Qual tabela(s) deve ser recuperada
+      ``ORDER BY`` Oredenamento dos dados
+      ``SELECT`` Informar quais colunas deseja recuperar
+      ``WHERE`` Informar as condições que os dados a serem recuperados devem atender
+
+  	SELECT
+  	{*, coluna[apelido], coluna[apelido], ...}
+  	FROM
+  	{tabela[apelido], tabela[apelido], ...}
+  	WHERE
+  	{condição, condição, ...}
+  	GROUP BY
+  	{coluna_agrupamento, coluna_agrupamento, ...}
+  	HAVING
+  	{condição_função_agrupamento, condição_função_agrupamento, ...}
+  	ORDER BY
+  	{coluna, coluna, ...}
+
+  - SELECT
+
+	SELECT coluna1, coluna1, ...
+	FROM tabela;
+
+	- Para selecionar todas as colunas de uma tabela, use SELECT*
+    
+    	SELECT *
+    	FROM tabela;
+
+    	- Para selecionar somente algumas colunas
+
+       	SELECT nm_departamento, localização(Colunas)
+    	FROM departamento; (Tabela
+       
+
+  - WHERE
+
+	- A cláusula ``WHERE`` é usada para filtrar os registros de uma tabela com base em uma condição.
+    	-  Serve para dizer ao banco de dados quais linhas devem ser retornadas de acordo com critérios definidos.
+
+       	SELECT coluna1, coluna2, ...
+    	FROM tabela
+    	WHERE condição;
+
+       	SELECT nm_departamento, localizacao
+    	FROM departamento
+    	WHERE localizacao = 'Blumenau';
+
+  - ORDER BY
+
+	- Para ordenar em ordem descrescente
+
+		SELECT  nm_pessoa, salario
+		FROM pessoa
+		ORDER BY salario DESC;
+
+	- Para ordenar em ordem crescente (padrão, podendo ser omitida)
+
+		SELECT  nm_pessoa, salario
+		FROM pessoa
+		ORDER BY salario ASC;	
+
+  - JOIN
+
+	- Usado para combinar linhas de 2 ou mais tabelas baseadas em uma coluna relacionada entre eles (normalmente atributos chaves).
+        - Por exemplo, se você possui uma tabela ``Departamento`` e uma tabela ``Funcionario``, pode realizar um join entre elas usando a coluna ``cd_departamento`` para exibir os pedidos de  cada funcionário juntamente com o nome do departamento que ele trabalha.
+
+  - INNER JOIN
+
+      - Só retorna as linhas que possuem correspondência nas duas tabelas.
+      - Se não houver correspondência, nada será exibido.
+      - O comando ON define a condição de junção das tabelas.
+
+	SELECT colunas
+	FROM tabela1
+	INNER JOIN tabela2
+	ON tabela1.coluna = tabela2.coluna;
+

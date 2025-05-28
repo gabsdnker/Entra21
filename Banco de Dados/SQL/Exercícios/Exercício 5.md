@@ -73,7 +73,7 @@ Utilizando o script de criação das tabelas da questão anterior, faça um outr
     FOREIGN KEY (nr_placa) REFERENCES Veiculo (nr_placa),
     FOREIGN KEY (cd_acessorio) REFERENCES Acessorio (cd_acessorio));
 
--RESTRIÇÕES:
+- RESTRIÇÕES:
 
         #INSERINDO VALORES NAS TABELAS COM RESTRIÇÕES
         

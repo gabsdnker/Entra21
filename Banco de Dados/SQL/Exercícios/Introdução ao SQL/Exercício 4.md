@@ -184,6 +184,13 @@ Reconstrua o modelo abaixo colocando as Primary Keys e Foreign Keys nas tabelas,
             SET nr_telefone = '47123456789'
             WHERE cd_proprietario = 1;
 
+            #SELECT
+            SELECT *
+            FROM localidade;
+            
+            SELECT ds_cor
+            FROM cor;
+
 Após inserir nas tabelas:
 
 a) Atualize a cor veículo com placa 'ABC1234' para 'Azul'

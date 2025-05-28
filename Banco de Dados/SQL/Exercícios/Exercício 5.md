@@ -73,6 +73,39 @@ Utilizando o script de criação das tabelas da questão anterior, faça um outr
     FOREIGN KEY (nr_placa) REFERENCES Veiculo (nr_placa),
     FOREIGN KEY (cd_acessorio) REFERENCES Acessorio (cd_acessorio));
 
+-RESTRIÇÕES:
+
+        #INSERINDO VALORES NAS TABELAS COM RESTRIÇÕES
+        
+        #NOT NULL
+        INSERT INTO combustivel(ds_combustivel)
+        VALUES (NULL); #TEM QUE DAR ERRO
+        
+        #UNIQUE
+        INSERT INTO proprietario(nm_proprietario, ds_logradouro, ds_complemento, ds_bairro, nr_telefone, ds_email, sg_uf)
+        VALUES ('João da Silva', 'Rua das Flores', 'Apto 101', 'Centro', '47999998888', 'joao.silva@email.com', 'SC'),
+               ('Maria Oliveira', 'Av. Brasil', 'Casa 2', 'Jardim América', '47999998888', 'maria.oliveira@email.com', 'SP');
+        		#Número de telefones iguais, tem que dar erro
+        		
+        INSERT INTO proprietario(nm_proprietario, ds_logradouro, ds_complemento, ds_bairro, nr_telefone, ds_email, sg_uf)
+        VALUES ('João da Silva', 'Rua das Flores', 'Apto 101', 'Centro', '47999998888', 'joao.silva@email.com', 'SC'),
+               ('Maria Oliveira', 'Av. Brasil', 'Casa 2', 'Jardim América', '47999997777', 'joao.silva@email.com', 'SP');
+               #Email igual, tem que dar erro 
+        
+        #AUTO_INCREMENT
+        INSERT INTO localidade(nm_localidade)
+        VALUES
+        ('São Paulo'),
+        ('Rio de Janeiro'),
+        ('Belo Horizonte'),
+        ('Curitiba'),
+        ('Porto Alegre'),
+        ('Salvador'),
+        ('Brasília'),
+        ('Recife'),
+        ('Fortaleza'),
+        ('Manaus');
+
 - DELETE
   
       #DELETANDO UMA LINHA DE UMA TABELA

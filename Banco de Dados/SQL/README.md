@@ -172,15 +172,15 @@ SELECT
 	FROM tabela;
 
 	- Para selecionar todas as colunas de uma tabela, use SELECT*
-    
-    	SELECT *
-    	FROM tabela;
 
-    	- Para selecionar somente algumas colunas
+		SELECT *
+		FROM tabela;
 
-       	SELECT nm_departamento, localização(Colunas)
-    	FROM departamento; (Tabela
-       
+	- Para selecionar somente algumas colunas
+
+		SELECT nm_departamento, localização(Colunas)
+		FROM departamento; (Tabela)
+
 
   - WHERE
 

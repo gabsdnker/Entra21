@@ -225,3 +225,4 @@ SELECT
 	INNER JOIN tabela2
 	ON tabela1.coluna = tabela2.coluna;
 
+

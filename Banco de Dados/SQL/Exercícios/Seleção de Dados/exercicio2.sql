@@ -234,13 +234,15 @@ WHERE nr_telefone LIKE '47%';
 
 # h) Selecione todos os veiculos com 2 portas
 
-SELECT nr_placa, qt_portas
+SELECT modelo.ds_modelo,  veiculo.qt_portas
 FROM veiculo
+JOIN modelo
 WHERE qt_portas = 2;
 
 # i) Mostre os veículos com mais de 100.000km rodados, ordenados dos mais rodados para o menos
 
-SELECT nr_placa, qt_km_rodado
+SELECT modelo.ds_modelo, veiculo.nr_placa, veiculo.qt_km_rodado
 FROM veiculo
+JOIN modelo
 WHERE qt_km_rodado > 100000
 ORDER BY qt_km_rodado DESC;

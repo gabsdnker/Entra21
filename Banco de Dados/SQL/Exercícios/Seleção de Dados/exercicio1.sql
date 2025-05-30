@@ -15,7 +15,7 @@ CREATE TABLE aluno(
 cd_aluno INTEGER AUTO_INCREMENT,
 nm_aluno VARCHAR(50) NOT NULL,
 dt_nascimento DATE,
-media_aluno DECIMAL,
+media_aluno DECIMAL (10,2),
 cd_professor INTEGER,
 PRIMARY KEY (cd_aluno),
 FOREIGN KEY (cd_professor) REFERENCES professor(cd_professor));

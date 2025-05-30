@@ -15,6 +15,9 @@ FROM proprietario
 WHERE ds_email IS NULL 
 	AND nr_telefone IS NOT NULL;
 	
-# d) Mostre os veículos fabricados após o ano de 20215, ordenados pelo ano de fabricação de forma decrescente 
+# d) Mostre os veículos fabricados após o ano de 2015, ordenados pelo ano de fabricação de forma decrescente 
 
-SELECT 
+SELECT nr_placa
+FROM veiculo
+WHERE nr_ano_fab > 2015 
+ORDER BY nr_ano_fab ASC;

@@ -21,7 +21,7 @@ public class App {
         	//funDAO.inserirFuncionario(new Funcionario("Joana", "joana@email.com", 2000, 3));
         	//funDAO.inserirFuncionario(new Funcionario("Alexandre", "alexandre@email.com", 5000, 1));
         	
-        	
+        	//funDAO.atualizarFuncionarios(new Funcionario(1, "Marcos", "marcos@gmail.com", 4500, 4));
         	
         	System.out.println(funDAO.listarFuncionarios());
         	

@@ -11,7 +11,7 @@ public class DepartamentoDAO {
     
     //Create
     public void inserirDepartamento(Departamento d) throws SQLException{
-        String sql = "INSERT INTO departamento (nm_depertamento) VALUES (?)";
+        String sql = "INSERT INTO departamento (nm_departamento) VALUES (?)";
         try(Connection con = Conexao.conectar();
             PreparedStatement ps = con.prepareStatement(sql)){
                 ps.setString(1, d.getNomeDepartamento());
@@ -30,7 +30,7 @@ public class DepartamentoDAO {
                 while(rs.next()){
                     Departamento d = new Departamento();
                     d.setCdDepartamento(rs.getInt("cd_departamento"));
-                    d.setNomeDepartamento(rs.getString("nm_depertamento"));
+                    d.setNomeDepartamento(rs.getString("nm_departamento"));
                     listaDepartamentos.add(d);
                 }
             }
@@ -38,5 +38,15 @@ public class DepartamentoDAO {
     }
 
     //Update
+    public void atualizarDepartamento (Departamento d) throws SQLException{
+        String sql = "UPDATE departamento SET nm_departamento = ? WHERE cd_departamento = ?";
+        try(Connection con = Conexao.conectar();
+            PreparedStatement ps = con.prepareStatement(sql)){
+                ps.setString(1, d.getNomeDepartamento());
+                ps.setInt(2, d.getCdDepartamento());
+                ps.executeUpdate();
+            }
+    }
+
     //Delete
 }

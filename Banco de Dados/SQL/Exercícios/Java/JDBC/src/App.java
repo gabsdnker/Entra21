@@ -12,7 +12,7 @@ public class App {
         	
         	//depDAO.atualizarDepartamento(new Departamento(3, "Analista"));
         	
-        	depDAO.deletarDepartamento(2);
+        	//depDAO.deletarDepartamento(2);
         	
         	System.out.println(depDAO.listarDepartamentos());
         	

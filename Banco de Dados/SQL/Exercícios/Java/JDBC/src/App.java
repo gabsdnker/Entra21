@@ -7,7 +7,7 @@ public class App {
 
         try {
         	//depDAO.inserirDepartamento(new Departamento("Desenvolvimento"));
-            //depDAO.inserirDepartamento(new Departamento("Recursos Humanos"));
+             //depDAO.inserirDepartamento(new Departamento("Recursos Humanos"));
         	//depDAO.inserirDepartamento(new Departamento("Limpeza"));
         	
         	//depDAO.atualizarDepartamento(new Departamento(3, "Analista"));

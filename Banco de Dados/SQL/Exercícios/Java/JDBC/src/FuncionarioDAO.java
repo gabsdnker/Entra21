@@ -80,4 +80,12 @@ public class FuncionarioDAO {
     }
     
 	//Delete
+    public void deletarFuncionario(int id) throws SQLException{
+    	String sql = "DELETE FROM funcionario WHERE cd_funcionario = ?";
+    	try(Connection con = Conexao.conectar();
+    		PreparedStatement ps = con.prepareStatement(sql)){
+    		ps.setInt(1, id);
+    		ps.executeUpdate();
+    	}
+    }
 }

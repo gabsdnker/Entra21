@@ -43,12 +43,41 @@ public class FuncionarioDAO {
     			f.setNome(rs.getString("nome"));
     			f.setEmail(rs.getString("email"));
     			f.setSalario(rs.getDouble("salario"));
-    			f.setCdDepartamento(rs.getInt("cd_departamento"));
+    			
+    			int cdDept = rs.getInt("cd_departamento");
+    			
+    			if (rs.wasNull()) {
+    				f.setCdDepartamento(null);
+    			} else {
+    				f.setCdDepartamento(cdDept);
+    			}
+    		
     			listaFuncionarios.add(f);
     		}
     	}
     	return listaFuncionarios;
     }
+    
 	//Update
+    public void atualizarFuncionarios(Funcionario f) throws SQLException{
+    	String sql = "UPDATE funcionario SET nome = ?, email = ?, salario = ?, cd_departamento = ? WHERE cd_funcionario = ?";
+    	try(Connection con = Conexao.conectar();
+    		PreparedStatement ps = con.prepareStatement(sql)){
+    		ps.setString(1, f.getNome());
+    		ps.setString(2, f.getEmail());
+    		ps.setDouble(3, f.getSalario());
+
+			if (f.getCdDepartamento() != null) {
+				 ps.setInt(4, f.getCdDepartamento());
+			 } else {
+				 ps.setNull(4, Types.INTEGER);
+			 }
+			
+			ps.setInt(5, f.getFuncionario());
+
+    		ps.executeUpdate();
+    	}
+    }
+    
 	//Delete
 }

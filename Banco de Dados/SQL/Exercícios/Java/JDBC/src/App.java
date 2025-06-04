@@ -23,6 +23,8 @@ public class App {
         	
         	//funDAO.atualizarFuncionarios(new Funcionario(1, "Marcos", "marcos@gmail.com", 4500, 4));
         	
+        	//funDAO.deletarFuncionario(6);
+        	
         	System.out.println(funDAO.listarFuncionarios());
         	
         } catch (SQLException ex) {

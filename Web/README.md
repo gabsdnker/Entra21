@@ -62,5 +62,11 @@ As principais linguagens para desenvolvimento web são:
 -  A maioria das tags servem mais como divisões semânticas do que sintáticas
 
 
+# Introdução ao CSS
 
+## Criando arquivo
+
+- Dentro da pasta escolhida para o projeto, crie um arquivo chamado style.css
+- Diferente do HTML, o CSS não possui uma estrutura inicial
+- Porém , é recomendado sempre começar 
 

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+p{
+    text-align: center;
+    margin: 10px 0;
+    color: #7f8c8d;
+}
+h2{
+    text-align: center;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+footer{
+    text-align: center;
+    margin: 20px 0;
+    color: #7f8c8d;
+}

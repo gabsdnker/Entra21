@@ -18,3 +18,16 @@
 - Programação Orientada a Objetos (OOP) - 32 horas ✅
 - Projeto Final - 28 horas
 - Tecnologias Emergentes e IA - 32 horas
+
+## Pastas
+
+- Banco de Dados
+    - Modelagem
+    - SQL
+- Java 
+    - Exercícios ArrayList
+    - Exercícios Extras
+    - Exercícios Herança
+    - Exercícios Programação Orientada a Objetos
+    - Exercícios Relacionamento entre Objetos
+- Web 

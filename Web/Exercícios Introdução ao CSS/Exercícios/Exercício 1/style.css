@@ -15,12 +15,12 @@ h1{
 p{
     text-align: center;
     margin: 10px 0;
-    color: black;
+    color: silver;
 }
 h2{
     text-align: center;
     margin: 10px 0;
-    color: #2c3e50;
+    color: rgb(53, 129, 216);
 }
 footer{
     text-align: center;
@@ -33,7 +33,6 @@ footer{
 }
 header{
     background-color: blue;
-    color: black;
     padding: 20px;
     text-align: center;
 }

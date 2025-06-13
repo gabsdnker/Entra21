@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.titulo{
+    background-color: silver;
+    padding: 10px;
+}
+.descricao{
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+.imagem-centro-distribuicao{
+    border: 1px solid  rgb(175, 175, 175);
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 60%;
+    height: auto;
+    background-color: gainsboro;
+}
+.imagem-distribuicao{
+    width: 100%;
+}
+.imagem-centro-distribuicao p{
+    margin: 0;
+    padding: 10px;    
+    text-align: center;
+    font-style: italic; 
+}
+p{
+    text-align: center;
+}
+.historia {
+  margin: 40px 20px;
+}
+.historia h3 {
+  margin: 10px 0;
+  display: block;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
+.texto-imagem {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+.texto-historia {
+  flex: 2;
+}
+.texto-historia p {
+  margin: 10px 0;
+  text-align: left;
+}
+.imagem-historia {
+  flex: 1;
+  border: 1px solid rgb(175, 175, 175);
+  background-color: gainsboro;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.imagem-historia img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.imagem-historia p {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+.diferenciais h3{
+    margin: 10px 0;
+    display: block;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+.diferenciais{
+    margin: 40px 20px;
+}
+.diferenciais ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+.compre-ja{
+    text-align: center;
+    margin: 40px 20px;
+    color: blue;
+    background-color: lightsteelblue;
+    padding: 20px;
+}
+footer {
+    padding: 20px;
+}
+footer img {
+  max-width: 100px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+footer p {
+    margin: 30px;
+  display: inline-block;
+  color: #777;
+  font-size: 14px;
+}

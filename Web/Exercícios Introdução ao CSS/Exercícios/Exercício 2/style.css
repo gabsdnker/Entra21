@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*a) Alterar a cor fundo da página para uma das cores da banderira do pais*/
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: hsl(0, 0%, 20%);
+}
+/*b) Aterar cor do título*/
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+p{
+    text-align: center;
+    margin: 10px 0;
+    color: #060707;
+}
+/*c) Crie um card para envolver a lista de pontos turisticos*/
+.card {
+    border: 2px solid red;
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 50%;
+}
+h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: red;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}

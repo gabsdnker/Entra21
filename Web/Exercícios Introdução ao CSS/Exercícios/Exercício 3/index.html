@@ -1,0 +1,97 @@
+<!--Nome: Gabrielli Danker-->
+
+<!--Criar uma página para um restaurante fictício
+Requisitos:
+a) Use um heading para mostrar o nome do restaurante no topo da página.
+b) Adicione uma seção logo abaixo do título para descrever o restaurante.
+    Esta seção deve incluir uma breve introdução ao restaurante e seu estilo de cozinha.
+c) Crie uma tabela para incluir pelo menos 5 itens do menu.
+d) Cada item da tabela deve ter 3 colunas: uma para o nome do item, uma para breve descrição do prato e outra para o preço.
+e) Estilize a tabela usando CSS para torná-la atraente e legível. Você pode definir 
+cores de fundo alternadas, fontes, bordas e espaçamento conforme necessário
+f) Adicione um cabeçalho à tabela para indicar as colunas (por exemplo, "Item" 
+“descrição” e "Preço")
+g) Crie uma lista não ordenada para mostrar os horários de funcionamento do 
+restaurante, como:
+Segunda a Sexta: 11:00 - 13:30
+h) Inclua uma imagem que represente o restaurante ou um de seus pratos 
+especiais-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Milcon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--Criando título-->
+        <h1>Restaurante Milcon</h1>
+        <!--Criando seção de descrição-->
+        <section>
+            <p>Bem-vindo ao Restaurante Milcon, onde a tradição se encontra com a inovação. 
+            Especializado em cozinha italiana, oferecemos uma experiência gastronômica única com pratos autênticos e ingredientes frescos.</p>
+        </section>
+
+        <!--Criando tabela do menu-->
+        <div class="menu">
+            <h2>Menu</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti Carbonara</td>
+                        <td>Clássico italiano com bacon crocante e molho cremoso</td>
+                        <td>R$ 35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Margherita</td>
+                        <td>Pizza tradicional com molho de tomate, mussarela e manjericão</td>
+                        <td>R$ 30,00</td>
+                    </tr>
+                    <tr>
+                        <td>Lasanha à Bolonhesa</td>
+                        <td>Lasanha recheada com carne moída e queijo gratinado</td>
+                        <td>R$ 40,00</td>
+                    </tr>
+                    <tr>
+                        <td>Tiramisu</td>
+                        <td>Sobremesa clássica italiana com café e mascarpone</td>
+                        <td>R$ 20,00</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Bebida quente de café expresso com leite vaporizado</td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Criando tabela com os horários de funcionamento-->
+        <div class="operating-hours-section">
+            <h2>Horários de Funcionamento</h2>
+            <ul class="operating-hours">
+                <li>Segunda a Sexta: 11:00 - 13:30</li>
+                <li>Sábado: 12:00 - 14:30</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+
+        <!-- Imagem representativa do restaurante -->
+        <img src="https://www.allrecipes.com/thmb/Vg2cRidr2zcYhWGvPD8M18xM_WY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg" alt="Restaurante Milcon" height="300px"/>
+
+    </div>
+    <footer>
+        <p>&copy; 2023 Restaurante Milcon. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Gabrielli Danker</title>
+  <style>
+    :root {
+      --rosa: #ec4899;
+      --preto: #111827;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--branco);
+      color: var(--preto);
+      line-height: 1.6;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    header {
+      background-color: var(--rosa);
+      color: var(--branco);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: var(--preto);
+      color: var(--branco);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--rosa);
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .projeto {
+      border: 2px solid var(--rosa);
+      padding: 1rem;
+      border-radius: 10px;
+      background: #fff0f6;
+    }
+
+    .projeto a {
+      text-decoration: none;
+      color: var(--preto);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    .projeto p, .projeto h3{
+        text-align: center;
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: var(--branco);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Imagens/Media.jpg" alt="Logo Gabrielli Danker" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+    <h1>Gabrielli Danker</h1>
+    <p>O conhecimento ninguém pode tirar de você!</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre / About</a>
+    <a href="#projetos">Projetos / Projects</a>
+    <a href="#contato">Contato / Contact</a>
+  </nav>
+
+  <section class="section" id="sobre">
+    <h2>Sobre Mim / About Me</h2>
+    <p>
+      Olá! Eu sou a Gabrielli Danker, apaixonada por tecnologia e desenvolvimento. Estou sempre em busca de aprender algo novo e desenvolver soluções criativas. Faço faculdade de Ciência da Computação e estou sempre em busca de novos desafios. <br><br>
+      Hello! I'm Gabrielli Danker, passionate about technology and development. I'm always looking to learn something new and build creative solutions. I'm studying Computer Science and I'm always looking for new challenges.
+    </p>
+  </section>
+
+  <section class="section" id="projetos">
+    <h2>Projetos / Projects</h2>
+    <div class="projetos">
+      <div class="projeto">
+        <h3>Assistente de Estudos com Agenda Inteligente</h3>
+        <p>Este projeto é um sistema de gerenciamento de tarefas e projetos voltado para estudantes, que oferece uma interface gráfica simples e sugestões inteligentes baseadas em horários. A aplicação foi desenvolvida em Java e utiliza 6 Padrões de Projeto como parte da arquitetura.</p><br>
+        <p>This project is a task and project management system aimed at students, offering a simple graphical interface and intelligent suggestions based on schedules. The application was developed in Java and uses 6 Design Patterns as part of its architecture.</p>
+        <a href="https://github.com/gabsdnker/IFC/tree/be4776e4779d8abb9d33b6a287e5d1986aef0635/PAP/Projeto%20Final" target="_blank">Ver no GitHub / View on GitHub</a>
+      </div>
+      <div class="projeto">
+        <h3>Goal Tickets</h3>
+        <p>Este projeto é um sistema de gerenciamento de tickets para eventos, permitindo que os usuários comprem, vendam e gerenciem seus ingressos de forma eficiente. A aplicação foi desenvolvida em Python e utiliza o framework Django.</p><br>
+        <p>This project is a ticket management system for events, allowing users to buy, sell, and manage their tickets efficiently. The application was developed in Python and uses the Django framework.</p>
+        <a href="https://github.com/gabsdnker/IFC/tree/be4776e4779d8abb9d33b6a287e5d1986aef0635/DW-II/Projeto%20Final" target="_blank">Ver no GitHub / View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <h2>Contato / Contact</h2>
+    <p style="text-align:center;">
+      Você pode entrar em contato comigo pelo <a href="mailto:gabrielli.danker@gmail.com">e-mail</a> ou pelo <a href="https://github.com/gabsdnker" target="_blank">GitHub</a>.<br><br>
+      You can contact me via <a href="mailto:gabrieli.danker@gmail.com">email</a> or on <a href="https://github.com/gabsdnker" target="_blank">GitHub</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gabrielli Danker. Todos os direitos reservados / All rights reserved.</p>
+  </footer>
+</body>
+</html>

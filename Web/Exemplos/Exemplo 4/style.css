@@ -1,0 +1,16 @@
+button{
+    background-color: pink;
+}
+
+button{
+    background-color: blue;
+    cursor: pointer;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color: orange;
+}

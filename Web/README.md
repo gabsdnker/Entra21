@@ -9,7 +9,7 @@ As principais linguagens para desenvolvimento web são:
 
 ## O que o navegador entende?
 
-- Um compuntador não consegue compilar Java nativamente, para isso precisamos de uma JVM (Java Virtual Machine)
+- Um computador não consegue compilar Java nativamente, para isso precisamos de uma JVM (Java Virtual Machine)
 - Nossos navegadores entendem por padrão HTML, CSS e JavaScript
 
 ## HTML, CSS, Java Script 
@@ -79,12 +79,19 @@ As principais linguagens para desenvolvimento web são:
 ## Propriedades básicas CSS
 
 ``background-color`` -> Altera a cor de fundo
+
 ``font-family`` -> Altera o estilo da letra do texto
+
 ``color`` -> Altera a cor do texto
+
 ``font-size`` -> Tamanho do texto
+
 ``text-align`` -> Alinhamento do texto
+
 ``margin`` -> Define uma margem
+
 ``width`` -> Define a largura
+
 ``height`` -> Define a altura
 
 ## Criando classes

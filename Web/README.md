@@ -74,7 +74,7 @@ As principais linguagens para desenvolvimento web são:
 
 - Somente o arquivo CSS sozinho não afeta nossa página
 - Para isso adicionamos ao nosso HTML, no final do ``head`` , a tag que referência o estilo:
-  ``<link rel= "stylesheet" href= "style.css">
+  ``<link rel= "stylesheet" href= "style.css">``
 
 ## Propriedades básicas CSS
 
@@ -141,10 +141,15 @@ background-color: aqua;
 ### Os mais usados são:
 
 ``nth-child(even)`` -> Para as linhas pares
+
 ``nth-child(odd)`` -> Para as linhas ímpares
+
 ``nth-child(3n)`` -> Para as linhas múltiplas de 3
+
 ``nth-child(5)`` -> Para a quinta linha
+
 ``first-child`` -> Para a primeira linha
+
 ``last-child`` -> Para a última linha
 
 ## Hierarquia de Especificidade
@@ -155,8 +160,12 @@ background-color: aqua;
 ### Ordem de hierarquia do menor para o maior:
 
 - Seletor de tipo
+  
 - Seletor de classe e pseudo-classe ``.texto``
+  
 - Seletor de ID ``#principal``
+  
 - Estilos inline
+  
 - ``!important`` (não recomendado)
 

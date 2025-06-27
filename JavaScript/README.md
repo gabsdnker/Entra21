@@ -44,12 +44,12 @@
 - ``prompt()`` Abre um campo para o usuário digitar
 - ``confirm()`` O usuário confirma ou não a ação
 
-    let campo = prompt('Digite'); // retorna o que foi digitado no campo
+        let campo = prompt('Digite'); // retorna o que foi digitado no campo
 
-    let confirmar = confirm('Aceitar ou não'); // pode retornar true ou false
+        let confirmar = confirm('Aceitar ou não'); // pode retornar true ou false
 
-    console.log(campo);
-    console.log(confirmar);
+        console.log(campo);
+        console.log(confirmar);
 
 ## Objetos
 
@@ -58,14 +58,14 @@
 - Para criar um objeto em JavaScript, utilizamos chaves {}
 - Dentro delas definimos as propriedades e valores do objeto.
 
-    const carro = {
-        marca: "Honda",
-        modelo: "Civic",
-        ano: 2010,
-        cor: "Preto",
-        preco: 400000
-    };
+        const carro = {
+            marca: "Honda",
+            modelo: "Civic",
+            ano: 2010,
+            cor: "Preto",
+            preco: 400000
+        };
 
-    console.log(carro);
+        console.log(carro);
 
-    console.log(carro.marca);
+        console.log(carro.marca);

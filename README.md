@@ -39,3 +39,4 @@
    - Exercícios Introdução ao CSS
 - JavaScript
     - Exemplos
+    - Exercícios

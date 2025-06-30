@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form>
+        <label for="email":>Email:</label>
+        <input type="email" id="email" name="email"/><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"/><br><br>
+
+        <label for="descricao">Insira uma descrição sua:</label>
+        <input type="text" id="descricao" name="descricao"/><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <br><br>
+    <h2>Selecione uma fruta</h2>
+    <form>
+        <input type="radio"  id="maca" name="fruta" value="maca">
+        <label for="maca">Maçã</label><br><br>
+        <input type="radio" id="banana" name="fruta" value="banana">
+        <label for="banana">Banana</label><br><br>
+        <input type="radio" id="laranja" name="fruta" value="laranja">
+        <label for="laranja">Laranja</label><br><br>
+        <input type="radio" id="uva" name="fruta" value="uva">
+        <label for="uva">Uva</label><br><br>
+        <input type="radio" id="abacaxi" name="fruta" value="abacaxi">
+        <label for="abacaxi">Abacaxi</label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <h2>Selecione um curso</h2>
+    <form>  
+        <input type="checkbox" id="html" name="curso" value="html">
+        <label for="html">HTML</label><br><br>
+        <input type="checkbox" id="css" name="curso" value="css">
+        <label for="css"> CSS</label><br><br>
+        <input type="checkbox" id="javascript" name="curso" value="javascript">
+        <label for="javascript">JavaScript</label><br><br>
+        <input type="checkbox" id="java" name="curso" value="java">
+        <label for="java">Java</label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <h2>Selecione uma linguagem de programação</h2>
+    <form>
+        <label for="linguagem">Linguagem de Programação:</label>
+        <select id="linguagem" name="linguagem">
+            <option value="" disabled selected>Selecione</option>
+            <optgroup label="Front-end">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-end">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="php">PHP</option>
+            </optgroup>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <script src="script.js"></script>
+</body>
+</html>

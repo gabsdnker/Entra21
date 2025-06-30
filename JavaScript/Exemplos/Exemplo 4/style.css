@@ -1,0 +1,12 @@
+.botao1, .botao2, .botao3, .botao4{
+    display: flex;
+}
+.botao1, .botao2, .botao3, .botao4{
+    margin-bottom: 10px;
+}
+.botao1 p, .botao2 p, .botao3 p, .botao4 p{
+    margin: 5px 10px 5px 0;
+}    
+p{
+    margin-right: 10px;
+}

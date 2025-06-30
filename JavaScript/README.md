@@ -130,4 +130,128 @@
 
         const stringLinguagens = linguagens.join(", ");  //Junta todos os elementos de um array em uma string
 
+## Funções no JavaScript
 
+- Fórmula: ``function nomeDaFuncao(paramentros){corpo da função}``
+- Pode ser executada de algumas formas, por exemplo, ao clicar em um botão
+
+        No JavaScript:
+                function aoClicarNoBotao(){
+                        console.log("olá,mundo");
+                }
+        
+        No HTML:
+                <button onclick="aoClicarNoBotao()">teste</button>
+
+## Modificar CSS com JavaScript
+
+- É possível modificar o CSS através do JavaScript, alterando dinamicamente a aparência dos elementos.
+
+        document.getElementById("minha-id").style.color = "red";
+
+**As mais usadas são:**
+
+- Alteração Inline:
+        - Altera diretamente a aparência de um elemento HTML usando a propriedade .style no JavaScript.
+        - No JavaScript os nomes das propriedades CSS devem ser escritos em camelCase
+
+- Adicionar ou remover classes:
+        -Em vez de modificar estilos diretamente você pode aplicar estilos predefinidos adicionando ou removendo classes
+
+                document.getElementById("minha-id").classList.add("nome-classe);
+                document.getElementById("minha-id").classList.remove("nome-classe");
+
+## Formulários
+
+- ``<form>`` será a tag mãe, dentro da tag pode ser colocada a ação que será feita como back-end.
+
+- ``label`` é o rótulo do input, precisa ter a tag for com o mesmo nome da id do **input/textarea** 
+
+- A tag ``type`` dita o tipo do input
+
+- A tag ``name`` serve para o back-end reconhecer o conteúdo do input.
+
+- O formulário é enviado a partir de um ``button`` , idealmente de tipo ``submit``
+
+        No HTML:
+                <label for="email">Insira o email</label>
+                <input type = "email" id="email" name= "email"/><br>
+
+                <label for="senha">Insira o email</label>
+                <input type = "password" id="senha" name= "senha"/><br>
+
+                <label for="descricao">Insira uma descrição sua</label>
+                <textarea id="descricao" name="descricao"></textarea>
+
+                <button type="submit">Enviar</button>
+
+### Botões no final de um formulário
+
+- No final de um formulário  é normalmente encontrada um botão, esses botões podem ser vários tipos, cada um servindo a um propósito específico.
+- Os tipos mais comuns são:
+        - **Submit (padrão em formulários):** Envia os dados do formulário para o servidor, é necessário um back-end
+        - **Button:** Vai realizar alguma ação a partir da função chamada pelo botão.
+        - **Reset:** Restaura todos os campos do formulário para seus valores iniciais, sem enviar dados ou requisições ao servidor.
+
+### Botões de rádio (Radio buttons)
+
+-  Permite selecionar somente 1 botão a partir de vários
+-  A tag **name** defimirá o grupo dos botões e sua exclusividade.
+-  A tag **value** é o valor que será enviado para o back-end.
+-  Pode usar a tag **checked** após **value** para ter um botão pré-selecionado e a tag **disbled** para desabilitar um botão.
+
+        <form>
+                <label for="email":>Email:</label>
+                <input type="email" id="email" name="email"/><br><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"/><br><br>
+
+                <label for="descricao">Insira uma descrição sua:</label>
+                <input type="text" id="descricao" name="descricao"/><br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+        </form>
+
+### Checkbox
+
+- Permite selecionar 0 ou mais opções
+
+        <form>  
+                <input type="checkbox" id="html" name="curso" value="html">
+                <label for="html">HTML</label><br><br>
+                <input type="checkbox" id="css" name="curso" value="css">
+                <label for="css"> CSS</label><br><br>
+                <input type="checkbox" id="javascript" name="curso" value="javascript">
+                <label for="javascript">JavaScript</label><br><br>
+                <input type="checkbox" id="java" name="curso" value="java">
+                <label for="java">Java</label><br><br>
+                <button type="submit">Enviar</button>
+        </form>
+
+### Select
+
+- Usado para criar uma lista drop-down
+- É separado por um **select** que será o menu drop-down
+- E vários **option** que são as escolhas do usuário
+- Para simular um **placeholder**: o primeiro **option** pode ter as tags **disabled**, **selcted** e **value=""** com o **select** tendo a tag **required**
+- **optgroup** separa as opções por categoria
+
+        <form>
+                <label for="linguagem">Linguagem de Programação:</label>
+                <select id="linguagem" name="linguagem">
+                        <option value="" disabled selected>Selecione</option>
+                        <optgroup label="Front-end">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        </optgroup>
+                        <optgroup label="Back-end">
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="php">PHP</option>
+                        </optgroup>
+                </select>
+                <button type="submit">Enviar</button>
+        </form>

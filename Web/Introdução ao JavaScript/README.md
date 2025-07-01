@@ -293,3 +293,13 @@
            <button type="submit" onclick="validarNome()">Enviar</button>
         </form>
 
+     No JavaScript:
+
+     function validarNome(){
+        const nome = document.getElementById("nome").value;
+        if (nome != "Henrique"){
+                alert("Nome inválido");
+                return false;
+        }
+        window.location.href = "outro.html";
+     }

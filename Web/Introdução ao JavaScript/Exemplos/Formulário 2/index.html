@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Cadastro de vendas</h1>
+    <h2>Preencha os dados abaixo para registrar uma venda na padaria.</h2>
+    <form id="formVenda">
+        <!--Nome do alimento-->
+        <label for="nome">Nome do alimento:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <!--Descrição-->
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+        <br>
+        <!--Valor-->
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required>
+        <br>
+        <!--Tipo: Doce, Salgado, Bebida, etc-->
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="doce">Doce</option>
+            <option value="salgado">Salgado</option>
+            <option value="bebida">Bebida</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br>
+        <!--Contém ou não lactose-->
+        <label for="lactose">Contém lactose:</label>
+        <input type="checkbox" id="lactose" name="lactose">
+        <br>
+        <!--Botão para enviar o formulário-->
+        <button type="submit">Registrar Venda</button>
+        <!--Botão para limpar o formulário-->
+        <button type="reset">Limpar Formulário</button>
+    </form>    
+</body>
+</html>

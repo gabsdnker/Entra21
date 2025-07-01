@@ -24,19 +24,20 @@
 - Banco de Dados
     - Modelagem
     - SQL
+
 - Desafios
     - Desafio 1
     - Desafio 2
+
 - Java 
     - Exercícios ArrayList
     - Exercícios Extras
     - Exercícios Herança
     - Exercícios Programação Orientada a Objetos
     - Exercícios Relacionamento entre Objetos
+    
 - Web
    - Exemplos
-   - Exercícios Introdução ao HTML
-   - Exercícios Introdução ao CSS
-- JavaScript
-    - Exemplos
-    - Exercícios
+   - Introdução ao HTML
+   - Introdução ao CSS
+   - Introdução ao JavaScript

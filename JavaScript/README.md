@@ -189,8 +189,11 @@
 
 - No final de um formulário  é normalmente encontrada um botão, esses botões podem ser vários tipos, cada um servindo a um propósito específico.
 - Os tipos mais comuns são:
+
         - **Submit (padrão em formulários):** Envia os dados do formulário para o servidor, é necessário um back-end
+
         - **Button:** Vai realizar alguma ação a partir da função chamada pelo botão.
+
         - **Reset:** Restaura todos os campos do formulário para seus valores iniciais, sem enviar dados ou requisições ao servidor.
 
 ### Botões de rádio (Radio buttons)
@@ -255,3 +258,38 @@
                 </select>
                 <button type="submit">Enviar</button>
         </form>
+
+
+### Datalist
+
+- Parecido com o select, porém com a opção de autocomplete ao usuário digitar as opções.
+
+         <form> 
+             <input list= "linguagen" name="linguagens">
+             <datalist id= "linguagens">
+                   <option value= "HTML">
+                   <option value= "CSS">
+                   <option value= "JavaScript">
+                   <option value= "C#">
+                   <option value= "Java">
+             </datalist>
+             <button type= "submit">Enviar</button>
+         </form>
+
+
+## Validação 
+
+- É considerada boa prática algumas das validações estarem no JavaScript em vez do back-end
+- Por exemplo: para obter a informação inserida como texto é necessário pegar o **value** dos **inputs**
+- Com o **value** podemos validar o formulário
+- Podemos redirecionar para outra página com o comando **window.location.href =“**
+
+     No HTML:
+
+        <form>
+           <label for= "nome">Insira seu nome</label>
+           <input type="text" id= "nome" name= "nome">
+       
+           <button type="submit" onclick="validarNome()">Enviar</button>
+        </form>
+

@@ -51,28 +51,6 @@ Um e-commerce voltado para a venda de produtos sustentáveis, ecológicos e reut
 - Produtos para pets ecológicos
 - Kits de presente ecológicos
 
-## Páginas 
-
-- Página Inicial
-    - Banner com imagem ecológica e chamada para ação
-    - Menu com submenu (ex: “Produtos” → “Higiene”, “Moda”, etc.)
-    - Destaques de produtos
-    - Rodapé com logo, redes sociais, e informações da empresa
-
-- Página de Produto
-    - Imagem do produto
-    - Descrição
-    - Preço
-    - Botão “Adicionar ao carrinho”
-
--Página de Login/Cadastro
-    - Campos com validação (e-mail, senha, nome)
-    - Botões de login/cadastro
-    - Link para “Esqueci minha senha”
-
-- Página de Categoria (ex: Moda Sustentável)
-    - Lista de produtos com filtros (preço, material, etc.)
-
 ## Estilo visual
 
 - **Cores:** Verde musgo, branco, bege claro
@@ -82,35 +60,36 @@ Um e-commerce voltado para a venda de produtos sustentáveis, ecológicos e reut
 
 ## Funcionalidades
 
-Na página **Inicial**:
+Na página **Inicial**: 
     - ao clicar no botão **Compre Agora**, vai para a página de todos os produtos 
     - ao clicar no logotipo vai para a página **Sobre nós**
 
-Na página de todos os **Produtos**:
+Na página de todos os **Produtos**: 
     - ao clicar no botão **Menu**, irá abrir uma aba que terá **Contato**, **Login**, **Inicio**, **Sair** e **Carrinho**
     - ao clicar no botão **Produtos**, irá abrir a aba de filtro dos produtos
 
-Na página **Contato**:
+Na página **Contato**: 
+    - Será no **rodapé** das páginas
     - terá email, telefone e endereço da loja e um botão **Sobre nós** 
     - ao clicar no botão **Sobre nós**, vai para a página sobre nós
 
-Na página **Login**:
+Na página **Login**: 
     - Terá o botão **Esqueceu a senha?**, **Login**, **Cadrastrar-se**
     - Para logar terá que colocar email e senha
     - ao clicar no botão **Esqueceu senha**, aparecer uma página para colocar o email e após colocar o email e pedir para redefinir senha ele notifica que **Email de redefinição de senha enviado!**
     - ao clicar no botão **Login**, irá logar na conta do usuário.
     - ao clicar no botão **Cadrastar-se** irá para a página de cadrastro
 
-Na página **Carrinho**:
+Na página **Carrinho**: feito
     - Terá os itens que o usuário selecionou para a compra, botão **Pagamento** que vai para a página de pagamento.
     - Cada item terá um botão de excluir ou adicionar quantidades do produto.
     - Se o usuário não tiver logado na loja, o carrinho manda direto para a página de login
 
-Na página **Cadrastro**:
+Na página **Cadrastro**:  
     - Terá o botão **Cadastrar**, para cadastrar precisará de email, nome completo, data de nascimento, cpf, senha e confirmação de senha
     - ao clicar no botão **Cadastrar** ele aparece uma notificação de **Cadastro concluído!** e loga direto na conta desse usuário
 
-Na página **Pagamento**:
+Na página **Pagamento**: 
     - Terá o botão **Pagar**, para poder pagar terá que ser as seguintes informações:
         - Forma de Pagamento:
             - Pix
@@ -124,13 +103,13 @@ Na página **Pagamento**:
                     - Código de segurança
                     - Validade do cartão
 
-Na página **Sobre nós**:
+Na página **Sobre nós**: 
     - Terá a história da loja *EcoVibe Store*
         - Quem Somos
             - A EcoVibe Store nasceu com o propósito de transformar hábitos de consumo e promover um estilo de vida mais consciente e sustentável. Acreditamos que pequenas escolhas diárias podem gerar grandes impactos positivos no planeta.
 
         - Nossa Missão
-            -Oferecer produtos ecológicos, reutilizáveis e de alta qualidade que ajudem nossos clientes a reduzir o uso de plástico, minimizar o desperdício e adotar práticas mais sustentáveis no dia a dia.
+            - Oferecer produtos ecológicos, reutilizáveis e de alta qualidade que ajudem nossos clientes a reduzir o uso de plástico, minimizar o desperdício e adotar práticas mais sustentáveis no dia a dia.
 
         - Nossa Visão
             - Ser referência nacional em comércio sustentável, inspirando pessoas a cuidarem do meio ambiente por meio de escolhas inteligentes e acessíveis.

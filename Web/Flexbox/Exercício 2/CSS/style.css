@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3fadc;
+  font-family: 'Segoe UI', sans-serif;
+}
+.pagina{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+}
+/* Texto principal */
+.texto-principal {
+  text-align: center;
+  padding: 2rem;
+}
+
+.frase-impacto {
+  font-size: 28px;
+  color: #32620e;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.informacao {
+  font-size: 18px;
+  color: #66bb6a;
+  margin-bottom: 20px;
+}
+
+/* Botão */
+.compre-agora {
+  background-color: #32620e;
+  color: #f3fadc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.compre-agora:hover {
+  background-color: #1f3d07;
+}
+
+/* Imagem do produto */
+.imagem-produto {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.imagem-produto img {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f3fadc;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-topo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.contatos {
+  color: #32620e;
+  flex: 1;
+  min-width: 200px;
+}
+
+.contatos h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contatos ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.logo-footer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+
+.logo-footer img {
+  width: 150px;
+  height: auto;
+}
+
+footer p {
+  color: #32620e;
+  font-size: 14px;
+  margin-top: 1rem;
+  text-align: center;
+}

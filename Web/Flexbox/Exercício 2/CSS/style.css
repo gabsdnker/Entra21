@@ -1,125 +1,176 @@
+/* Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
   background-color: #f3fadc;
-  font-family: 'Segoe UI', sans-serif;
+  color: #32620e;
+  line-height: 1.6;
 }
-.pagina{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+
+/* Página principal */
+.pagina {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem;
 }
-.logo{
-    width: 150px;
-    height: auto;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: 50px;
-}
+
 /* Texto principal */
 .texto-principal {
-  text-align: center;
-  padding: 2rem;
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  position: relative;
 }
 
-.frase-impacto {
-  font-size: 28px;
+.logo {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.texto-principal h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2b4c1b;
+  margin-bottom: 1rem;
+}
+
+.texto-principal h1 span {
   color: #32620e;
-  font-weight: bold;
-  margin-bottom: 10px;
 }
 
-.informacao {
-  font-size: 18px;
-  color: #66bb6a;
-  margin-bottom: 20px;
+.texto-principal p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #9dcd5a;
 }
 
-/* Botão */
-.compre-agora {
+.botao {
   background-color: #32620e;
-  color: #f3fadc;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  display: inline-block;
-  margin-top: 10px;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
   text-decoration: none;
-  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
 }
 
-.compre-agora:hover {
-  background-color: #1f3d07;
+.botao:hover {
+  background-color: #2e7d32;
 }
 
 /* Imagem do produto */
 .imagem-produto {
-  text-align: center;
-  margin: 2rem 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
 }
 
 .imagem-produto img {
-  max-width: 250px;
+  width: 250px;
+  max-width: 100%;
   height: auto;
 }
 
 /* Rodapé */
 footer {
   background-color: #f3fadc;
-  padding: 2rem;
+  color: #32620e;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  background-image: url('../Imagens/folhas-direita.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.footer-top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
 }
 
-.footer-topo {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
+.footer-top h1 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .contatos {
-  color: #32620e;
-  flex: 1;
-  min-width: 200px;
+  text-align: left;
 }
 
-.contatos h2 {
-  font-size: 1.2rem;
+.footer-top ul li {
   margin-bottom: 0.5rem;
-}
-
-.contatos ul {
-  list-style: none;
-  padding: 0;
-  line-height: 1.8;
-}
-
-.logo-footer {
-  flex: 1;
+  font-weight: bold;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-width: 200px;
+  gap: 0.5rem;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: #32620e;
 }
 
 .logo-footer img {
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 
 footer p {
-  color: #32620e;
-  font-size: 14px;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
   text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .pagina {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .texto-principal, .imagem-produto {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .contatos {
+    text-align: center;
+  }
 }

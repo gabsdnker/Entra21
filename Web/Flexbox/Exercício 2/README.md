@@ -85,7 +85,7 @@ Na página **Carrinho**: feito
     - Cada item terá um botão de excluir ou adicionar quantidades do produto.
     - Se o usuário não tiver logado na loja, o carrinho manda direto para a página de login
 
-Na página **Cadrastro**:  
+Na página **Cadastro**:  
     - Terá o botão **Cadastrar**, para cadastrar precisará de email, nome completo, data de nascimento, cpf, senha e confirmação de senha
     - ao clicar no botão **Cadastrar** ele aparece uma notificação de **Cadastro concluído!** e loga direto na conta desse usuário
 
@@ -123,3 +123,4 @@ Na página **Sobre nós**:
         - Nosso Compromisso
             - Todos os nossos produtos são cuidadosamente selecionados com base em critérios ecológicos, como materiais biodegradáveis, embalagens recicláveis e produção ética. Também buscamos parcerias com fornecedores locais e iniciativas que promovem o consumo responsável.
 
+https://iconscout.com/pt/icons/folhas?page=2&styles[]=plano

@@ -34,6 +34,8 @@ html, body {
 .logo {
   width: 150px;
   margin-bottom: 2rem;
+  position: relative;
+  right: auto;
 }
 
 .texto-principal h1 {
@@ -77,12 +79,16 @@ html, body {
   justify-content: center;
   align-items: center;
   min-width: 300px;
+  position: relative;
+  margin-left: 20rem;
+  margin-right: 2rem;
 }
 
 .imagem-produto img {
-  width: 250px;
+  width: 400px;
   max-width: 100%;
   height: auto;
+  width: 80%;
 }
 
 /* Rodapé */
@@ -91,7 +97,7 @@ footer {
   color: #32620e;
   padding: 2rem 1rem;
   margin-top: 3rem;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 
@@ -110,7 +116,7 @@ footer::before {
 }
 
 .footer-top {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;

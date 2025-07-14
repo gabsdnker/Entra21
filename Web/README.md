@@ -50,11 +50,19 @@ As principais linguagens para desenvolvimento web são:
 
 ### Estrutura de arquivos
 
+- Bootstrap
+  -README.md
+
 - Exemplos
   - Exemplo 1
   - Exemplo 2
   - Exemplo 3
   - Exemplo 4
+
+- Flexbox
+  - Exercício 1
+  - Exercício 2
+  - README.md
 
 - Introdução ao CSS
 

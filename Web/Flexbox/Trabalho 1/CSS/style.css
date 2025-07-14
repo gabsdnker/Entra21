@@ -1,0 +1,281 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estrutura base */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3fadc;
+  color: #32620e;
+}
+
+/* Container da página principal */
+.pagina {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-header .logo {
+  width: 150px;
+  height: auto;
+}
+
+.logo-header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Texto principal */
+.texto-principal {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #c3d6a9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Título */
+.texto-principal h1 {
+  font-size: 2rem;
+  color: #32620e;
+}
+
+.texto-principal h1 span {
+  color: #7ba93c;
+}
+
+/* Parágrafo */
+.texto-principal p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Botão */
+.botao {
+  background-color: #7ba93c;
+  color: #f3fadc;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #5e842c;
+}
+
+/* Produtos */
+.produtos {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2rem;
+  color: #32620e;
+  margin-bottom: 2rem;
+}
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Card de produto */
+.produto {
+  background-color: #f3fadc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+.produto img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.produto h3 {
+  font-size: 1.2rem;
+  color: #32620e;
+  margin-bottom: 0.5rem;
+}
+
+.produto p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+.produto span {
+  display: block;
+  font-size: 1.1rem;
+  color: #7ba93c;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.produto .botao {
+  background-color: #7ba93c;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.produto .botao:hover {
+  background-color: #5e842c;
+}
+
+/* Footer */
+footer {
+  background-color: #f3fadc;
+  color: #32620e;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer::before {
+  content: '';
+  background-image: url('../Imagens/planta.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 500px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.contatos {
+  text-align: left;
+  max-width: 50%;
+}
+
+.footer-top h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-top ul li {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: #32620e;
+}
+
+.logo-footer {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.logo-footer img {
+  width: 120px;
+  height: auto;
+}
+
+footer p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .pagina {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .texto-principal, .imagem-produto {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contatos {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .logo-footer {
+    justify-content: center;
+    text-align: center;
+  }
+}

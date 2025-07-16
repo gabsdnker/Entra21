@@ -73,7 +73,7 @@ Na página **Contato**:
     - terá email, telefone e endereço da loja e um botão **Sobre nós** 
     - ao clicar no botão **Sobre nós**, vai para a página sobre nós
 
-Na página **Login**: 
+Na página **Login**: feito
     - Terá o botão **Esqueceu a senha?**, **Login**, **Cadrastrar-se**
     - Para logar terá que colocar email e senha
     - ao clicar no botão **Esqueceu senha**, aparecer uma página para colocar o email e após colocar o email e pedir para redefinir senha ele notifica que **Email de redefinição de senha enviado!**
@@ -103,7 +103,7 @@ Na página **Pagamento**:
                     - Código de segurança
                     - Validade do cartão
 
-Na página **Sobre nós**: 
+Na página **Sobre nós**:  
     - Terá a história da loja *EcoVibe Store*
         - Quem Somos
             - A EcoVibe Store nasceu com o propósito de transformar hábitos de consumo e promover um estilo de vida mais consciente e sustentável. Acreditamos que pequenas escolhas diárias podem gerar grandes impactos positivos no planeta.
@@ -123,4 +123,11 @@ Na página **Sobre nós**:
         - Nosso Compromisso
             - Todos os nossos produtos são cuidadosamente selecionados com base em critérios ecológicos, como materiais biodegradáveis, embalagens recicláveis e produção ética. Também buscamos parcerias com fornecedores locais e iniciativas que promovem o consumo responsável.
 
-https://iconscout.com/pt/icons/folhas?page=2&styles[]=plano
+OBS.: 
+        - Procurar imagens de produtos ecologicos e tirar o fundoda imagem
+        - Colocar mais produtos na página de produtos
+
+
+
+
+

@@ -1,165 +1,163 @@
-/* Reset */
+/* Reset e fonte */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estrutura base */
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+body {
   background-color: #f3fadc;
+  font-family: 'Poppins', sans-serif;
   color: #32620e;
 }
 
-/* Container da página principal */
-.pagina {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  gap: 2rem;
+/*Header*/
+
+.navbar {
+  background-color: #f3fadc !important;
 }
+
+.navbar-nav .nav-link {
+  color: #32620e !important; 
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color:#7ba93c !important;  
+  text-decoration: none;
+}
+
+.navbar-collapse {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2332620e' viewBox='0 0 30 30'%3e%3cpath stroke='%2332620e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Botão Voltar ao Topo */
+#btnTopo {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  background-color: #32620e;
+  color: #f3fadc;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  display: none; /* Esconde por padrão */
+  transition: all 0.3s ease;
+}
+
+#btnTopo:hover {
+  background-color: #7ba93c;
+}
+
+table thead th {
+  background-color: #7ba93c !important;
+  color: #f3fadc !important;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f3fadc; /* cor de fundo para linhas pares */
+}
+
 
 /* Logo */
-.logo-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo-header .logo {
   width: 150px;
   height: auto;
 }
 
-.logo-header img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Texto principal */
 .texto-principal {
-  width: 100%;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 2rem;
   background-color: #c3d6a9;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  box-sizing: border-box;
 }
 
-/* Título */
 .texto-principal h1 {
+  font-weight: bold;
   font-size: 2rem;
   color: #32620e;
 }
 
 .texto-principal h1 span {
+  font-weight: bold;
   color: #7ba93c;
 }
 
-/* Parágrafo */
 .texto-principal p {
   font-size: 1.1rem;
   color: #444;
 }
 
-/* Botão */
-.botao {
-  background-color: #7ba93c;
+.texto-principal .btn {
+  background-color: #32620e;
   color: #f3fadc;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
   font-weight: bold;
   border-radius: 40px;
+  padding: 0.8rem 1.5rem;
+  border: none;
   transition: background-color 0.3s;
 }
 
-.botao:hover {
+.texto-principal .btn:hover {
   background-color: #5e842c;
 }
 
-/* Produtos */
-.produtos {
-  width: 100%;
-  padding: 4rem 2rem;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.produtos h2 {
-  font-size: 2rem;
-  color: #32620e;
-  margin-bottom: 2rem;
-}
-
-.grade-produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-/* Card de produto */
-.produto {
+/* Cards de produtos */
+.card {
   background-color: #f3fadc;
+  border: none;
   border-radius: 1rem;
-  padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
-.produto:hover {
+.card:hover {
   transform: scale(1.03);
 }
 
-.produto img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.produto h3 {
+.card-title {
+  color: #32620e !important;
+  font-weight: bold !important;
   font-size: 1.2rem;
-  color: #32620e;
-  margin-bottom: 0.5rem;
 }
 
-.produto p {
+.card-text {
   font-size: 0.95rem;
   color: #444;
-  margin-bottom: 0.8rem;
 }
 
-.produto span {
+.card strong {
   display: block;
   font-size: 1.1rem;
   color: #7ba93c;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
-.produto .botao {
-  background-color: #7ba93c;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  text-decoration: none;
+.card .btn {
+  background-color: #32620e;
+  color: #f3fadc;
   font-weight: bold;
   border-radius: 6px;
+  border: none;
   transition: background-color 0.3s;
 }
 
-.produto .botao:hover {
+.card .btn:hover {
   background-color: #5e842c;
 }
 
@@ -167,10 +165,8 @@ html, body {
 footer {
   background-color: #f3fadc;
   color: #32620e;
-  padding: 2rem;
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 
 footer::before {
@@ -188,26 +184,16 @@ footer::before {
 }
 
 .footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  z-index: 1;
   position: relative;
-  flex-wrap: wrap;
+  z-index: 1;
 }
 
-.contatos {
-  text-align: left;
-  max-width: 50%;
-}
-
-.footer-top h1 {
+footer h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.footer-top ul li {
+footer ul li {
   margin-bottom: 0.5rem;
   font-weight: bold;
   display: flex;
@@ -215,25 +201,9 @@ footer::before {
   gap: 0.5rem;
 }
 
-.footer-top a {
+footer a {
   text-decoration: none;
   color: #32620e;
-}
-
-.logo-footer {
-  max-width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  flex: 1;
-  min-width: 300px;
-  text-align: right;
-  padding: 0 2rem;
-  box-sizing: border-box;
 }
 
 .logo-footer img {
@@ -241,41 +211,15 @@ footer::before {
   height: auto;
 }
 
-footer p {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  text-align: center;
-  z-index: 1;
-  position: relative;
-  width: 100%;
-}
-
 /* Responsivo */
 @media (max-width: 768px) {
-  .pagina {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .texto-principal, .imagem-produto {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footer-top {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contatos {
-    text-align: center;
-    max-width: 100%;
-  }
-
   .logo-footer {
-    justify-content: center;
+    justify-content: center !important;
     text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .logo-header .logo {
+    width: 120px;
   }
 }

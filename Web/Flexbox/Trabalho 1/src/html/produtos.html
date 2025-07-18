@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produtos | EcoVibe Store</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="Imagens/logotipo.jpg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color: #f3fadc; font-family: 'Poppins', sans-serif;">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Imagens/logotipo.jpg" alt="EcoVibe Store" style="width: 130px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                      <li class="nav-item"><a class="nav-link fw-semibold" href="index.html"><i class="fas fa-home me-1"></i>Início</a></li>
+                      <li class="nav-item"><a class="nav-link fw-semibold" href="produtos.html"><i class="fas fa-box-open me-1"></i>Produtos</a></li>
+                      <li class="nav-item"><a class="nav-link fw-semibold" href="sobre.html"><i class="fas fa-info-circle me-1"></i>Sobre Nós</a></li>
+                      <li class="nav-item"><a class="nav-link fw-semibold" href="login.html"><i class="fas fa-sign-in-alt me-1"></i>Login</a></li>
+                      <li class="nav-item"><a class="nav-link fw-semibold active" aria-current="page" href="carrinho.html"><i class="fas fa-shopping-cart me-1"></i>Carrinho</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <main class="container my-5">
+    <section class="text-center mb-5">
+      <h1 class="fw-bold" style="color: #32620e;">Nossos Produtos</h1>
+      <p class="lead text-muted">Descubra soluções sustentáveis para o seu dia a dia</p>
+          
+      <!-- Campo busca -->
+      <input 
+      type="text" 
+      id="buscaProduto" 
+      class="form-control w-50 mx-auto" 
+      placeholder="Buscar produto pelo nome..." />
+    </section>
+
+    <div class="row g-4 text-center">
+      <!-- Produto 1 -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Caneca Ecológica">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/caneca.png" class="card-img-top" alt="Caneca Ecológica" />
+          <div class="card-body">
+            <h3 class="card-title">Caneca Ecológica</h3>
+            <p class="card-text">Feita de bambu, ideal para bebidas quentes.</p>
+            <strong>R$ 29,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar" 
+            data-nome="Caneca Ecológica" 
+            data-preco="29.90" 
+            data-imagem="caneca.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 2: Sacola Reutilizável -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Sacola Reutilizável">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/sacola.png" class="card-img-top" alt="Sacola Reutilizável" />
+          <div class="card-body">
+            <h3 class="card-title">Sacola Reutilizável</h3>
+            <p class="card-text">Perfeita para suas compras diárias.</p>
+            <strong>R$ 19,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar" 
+            data-nome="Sacola Reutilizável" 
+            data-preco="19.90" 
+            data-imagem="sacola.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 3: Escova de Dente de Bambu -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Escova de Dente de Bambu">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/escovadedente.png" class="card-img-top mt-5" alt="Escova de Dente de Bambu" style="margin-top: 5rem;"/>
+          <div class="card-body">
+            <h3 class="card-title">Escova de Dente de Bambu</h3>
+            <p class="card-text">Alternativa sustentável para sua higiene bucal.</p>
+            <strong>R$ 14,90</strong>
+           <a href="#" class="btn btn-success mt-2 btn-comprar" 
+            data-nome="Escova de Dente de Bambu" 
+            data-preco="14.90" 
+            data-imagem="escovadedente.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 4: Garrafas de Vidro -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Garrafas de Vidro">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/garrafavidro.png" class="card-img-top" alt="Garrafas de Vidro" />
+          <div class="card-body">
+            <h3 class="card-title">Garrafas de Vidro</h3>
+            <p class="card-text">Perfeitas para manter sua água fresca e livre de plástico.</p>
+            <strong>R$ 39,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar" 
+            data-nome="Garrafas de Vidro" 
+            data-preco="39.90" 
+            data-imagem="garrafavidro.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 5: Copo Retrátil de Silicone -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Copo Retrátil de Silicone">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/copo-silicone-retratil.png" class="card-img-top" alt="Copo Retrátil de Silicone" />
+          <div class="card-body">
+            <h3 class="card-title">Copo Retrátil de Silicone</h3>
+            <p class="card-text">Compacto e ideal para levar em viagens.</p>
+            <strong>R$ 24,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar" 
+            data-nome="Copo Retrátil de Silicone"
+            data-preco="24.90"
+            data-imagem="copo-silicone-retratil.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 6: Talheres reutilizáveis de bambu -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Talheres Reutilizáveis de Bambu">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/talheres.png" class="card-img-top" alt="Talheres Reutilizáveis de Bambu" />
+          <div class="card-body">
+            <h3 class="card-title">Talheres Reutilizáveis de Bambu</h3>
+            <p class="card-text">Conjunto de talheres ecológicos para levar a qualquerlugar.</p>
+            <strong>R$ 34,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Talheres Reutilizáveis de Bambu"
+            data-preco="34.90"
+            data-imagem="talheres.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 7: Canudo inox com escova de limpeza -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Canudo Inox com Escova de Limpeza">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/canudo.png" class="card-img-top" alt="Canudo Inox com Escova de Limpeza" />
+          <div class="card-body">
+            <h3 class="card-title">Canudo Inox com Escova de Limpeza</h3>
+            <p class="card-text">Durável e fácil de limpar, ideal para bebidas frias.</p>
+            <strong>R$ 19,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Canudo Inox com Escova de Limpeza"
+            data-preco="19.90"
+            data-imagem="canudo.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 8: Esponja vegetal (bucha natural) -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Esponja Vegetal">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/esponja-vegetal.png" class="card-img-top" alt="Esponja Vegetal" />
+          <div class="card-body">
+            <h3 class="card-title">Esponja Vegetal</h3>
+            <p class="card-text">Feita de fibras naturais, ideal para limpeza ecológica.</p>
+            <strong>R$ 9,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Esponja Vegetal"
+            data-preco="9.90"
+            data-imagem="esponja-vegetal.png">Comprar</a>
+          </div>
+        </div>  
+      </div>
+
+      <!-- Produto 9: Sabonete artesanal vegano -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Sabonete Artesanal Vegano">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/sabonete-artesanal.png" class="card-img-top" alt="Sabonete Artesanal Vegano" />
+          <div class="card-body">
+            <h3 class="card-title">Sabonete Artesanal Vegano</h3>
+            <p class="card-text">Feito com ingredientes naturais, sem crueldade animal.</p>
+            <strong>R$ 12,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Sabonete Artesanal Vegano"
+            data-preco="12.90"
+            data-imagem="sabonete-artesanal.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 10: Shampoo sólido -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Shampoo Sólido">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/shampoo-solido.png" class="card-img-top" alt="Shampoo Sólido" />
+          <div class="card-body">
+            <h3 class="card-title">Shampoo Sólido</h3>
+            <p class="card-text">Alternativa sustentável aos shampoos líquidos, sem plástico.</p>
+            <strong>R$ 24,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Shampoo Sólido"
+            data-preco="24.90"
+            data-imagem="shampoo-solido.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 11:  Cotonete biodegradável -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Cotonete Biodegradável">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/cotonete-biodegradável.png" class="card-img-top" alt="Cotonete Biodegradável" />
+          <div class="card-body">
+            <h3 class="card-title">Cotonete Biodegradável</h3>
+            <p class="card-text">Feito de papel e algodão, totalmente biodegradável.</p>
+            <strong>R$ 8,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Cotonete Biodegradável"
+            data-preco="8.90"
+            data-imagem="cotonete-biodegradável.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 12: Discos de algodão reutilizáveis -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Discos de Algodão Reutilizáveis">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/discos-algodão-reutilizáveis.png" class="card-img-top" alt="Discos de Algodão Reutilizáveis" />
+          <div class="card-body">
+            <h3 class="card-title">Discos de Algodão Reutilizáveis</h3>
+            <p class="card-text">Perfeitos para remoção de maquiagem, laváveis e ecológicos.</p>
+            <strong>R$ 15,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Discos de Algodão Reutilizáveis"
+            data-preco="15.90"
+            data-imagem="discos-algodão-reutilizáveis.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 13: Pente de bambu -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Pente de Bambu">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/pente-bambu.png" class="card-img-top" alt="Pente de Bambu" />
+          <div class="card-body">
+            <h3 class="card-title">Pente de Bambu</h3>
+            <p class="card-text">Feito de bambu, ideal para desembaraçar os cabelos sem agredir.</p>
+            <strong>R$ 19,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Pente de Bambu"
+            data-preco="19.90"
+            data-imagem="pente-bambu.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 14: Bolsa térmica ecológica -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Bolsa Térmica Ecológica">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/bolsa-termica.png" class="card-img-top" alt="Bolsa Térmica Ecológica" />
+          <div class="card-body">
+            <h3 class="card-title">Bolsa Térmica Ecológica</h3>
+            <p class="card-text">Perfeita para manter seus alimentos frescos e livres de plástico.</p>
+            <strong>R$ 49,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Bolsa Térmica Ecológica"
+            data-preco="49.90"
+            data-imagem="bolsa-termica.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 15: Porta-lanche sustentável (sacola de cera de abelha) -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Porta-Lanche Sustentável">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/saco-porta-lanche.png" class="card-img-top" alt="Porta-Lanche Sustentável" />
+          <div class="card-body">
+            <h3 class="card-title">Porta-Lanche Sustentável</h3>
+            <p class="card-text">Ideal para levar lanches de forma ecológica e prática.</p>
+            <strong>R$ 22,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Porta-Lanche Sustentável"
+            data-preco="22.90"
+            data-imagem="saco-porta-lanche.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 16: Caderno reciclado -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Caderno Reciclado">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/caderno-reciclado.png" class="card-img-top" alt="Caderno Reciclado" />
+          <div class="card-body">
+            <h3 class="card-title">Caderno Reciclado</h3>
+            <p class="card-text">Feito com papel reciclado, ideal para anotações sustentáveis.</p>
+            <strong>R$ 14,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Caderno Reciclado"
+            data-preco="14.90"
+            data-imagem="caderno-reciclado.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 17: Lixeira de compostagem doméstica (composteira) -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Lixeira de Compostagem Doméstica">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/lixeira-compostagem.png" class="card-img-top" alt="Lixeira de Compostagem Doméstica" />
+          <div class="card-body">
+            <h3 class="card-title">Lixeira de Compostagem Doméstica</h3>
+            <p class="card-text">Perfeita para transformar resíduos orgânicos em adubo.</p>
+            <strong>R$ 89,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Lixeira de Compostagem Doméstica"
+            data-preco="89.90"
+            data-imagem="lixeira-compostagem.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 18: Vela vegana (sem parafina, com cera de soja) -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Vela Vegana">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/vela-de-cera-de-soja.png" class="card-img-top" alt="Vela Vegana" />
+          <div class="card-body">
+            <h3 class="card-title">Vela Vegana</h3>
+            <p class="card-text">Feita com cera de soja, sem parafina, ideal para aromatizar o ambiente.</p>
+            <strong>R$ 29,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Vela Vegana"
+            data-preco="29.90"
+            data-imagem="vela-de-cera-de-soja.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 19: Pano de cera de abelha -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Pano de Cera de Abelha">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/pano-cera-abelha.png" class="card-img-top" alt="Pano de Cera de Abelha" />
+          <div class="card-body">
+            <h3 class="card-title">Pano de Cera de Abelha</h3>
+            <p class="card-text">Alternativa ecológica para embalar alimentos, substituindo o plástico.</p>
+            <strong>R$ 19,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Pano de Cera de Abelha"
+            data-preco="19.90"
+            data-imagem="pano-cera-abelha.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 20: Sabão ecológico para roupas -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Sabão Ecológico para Roupas">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/sabao-roupas.png" class="card-img-top" alt="Sabão Ecológico para Roupas" />
+          <div class="card-body">
+            <h3 class="card-title">Sabão Ecológico para Roupas</h3>
+            <p class="card-text">Feito com ingredientes naturais, ideal para lavar roupas sem agredir o meio ambiente.</p>
+            <strong>R$ 24,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Sabão Ecológico para Roupas"
+            data-preco="24.90"
+            data-imagem="sabao-roupas.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 21: Óleo essencial natural (lavanda, eucalipto, etc.) -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Óleo Essencial Natural">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/oleo-essencial.png" class="card-img-top" alt="Óleo Essencial Natural" />
+          <div class="card-body">
+            <h3 class="card-title">Óleo Essencial Natural</h3>
+            <p class="card-text">Perfeito para aromaterapia, disponível em várias fragrâncias.</p>
+            <strong>R$ 34,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Óleo Essencial Natural"
+            data-preco="34.90"
+            data-imagem="oleo-essencial.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 22: Kit zero lixo (sacola + canudo + talheres + copo) -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Kit Zero Lixo">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/kit-zero-lixo.png" class="card-img-top" alt="Kit Zero Lixo" />
+          <div class="card-body">
+            <h3 class="card-title">Kit Zero Lixo</h3>
+            <p class="card-text">Inclui sacola reutilizável, canudo inox, talheres de bambu e copo retrátil.</p>
+            <strong>R$ 99,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Kit Zero Lixo"
+            data-preco="99.90"
+            data-imagem="kit-zero-lixo.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 23: Escova para limpeza de mamadeiras ou copos reutilizáveis -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Escova para Limpeza de Mamadeiras" id="produtosContainer">
+        <div class="card h-100" style="width: 100%; max-width: 400px;">
+          <img src="Imagens/Produtos/escova-limpeza.png" class="card-img-top" alt="Escova para Limpeza de Mamadeiras" />
+          <div class="card-body">
+            <h3 class="card-title">Escova para Limpeza de Mamadeiras</h3>
+            <p class="card-text">Ideal para manter mamadeiras e copos reutilizáveis sempre limpos.</p>
+            <strong>R$ 19,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Escova para Limpeza de Mamadeiras"
+            data-preco="19.90"
+            data-imagem="escova-limpeza.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 24: Mochila feita com tecido reciclado -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Mochila de Tecido Reciclado">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/mochilas-reciclado.png" class="card-img-top" alt="Mochila de Tecido Reciclado" />
+          <div class="card-body">
+            <h3 class="card-title">Mochila de Tecido Reciclado</h3>
+            <p class="card-text">Perfeita para o dia a dia, feita com materiais reciclados.</p>
+            <strong>R$ 89,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Mochila de Tecido Reciclado"
+            data-preco="89.90"
+            data-imagem="mochilas-reciclado.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 25: Máscara facial de tecido reutilizável -->
+      <div class="col-md-6 col-lg-3 produto" data-nome="Máscara Facial de Tecido Reutilizável">
+        <div class="card h-100" style="width: 100%; max-width: 400px;" id="produtosContainer">
+          <img src="Imagens/Produtos/mascara-tecido.png" class="card-img-top" alt="Máscara Facial de Tecido Reutilizável" />
+          <div class="card-body">
+            <h3 class="card-title">Máscara Facial de Tecido Reutilizável</h3>
+            <p class="card-text">Confortável e ecológica, ideal para uso diário.</p>
+            <strong>R$ 12,90</strong>
+            <a href="#" class="btn btn-success mt-2 btn-comprar"
+            data-nome="Máscara Facial de Tecido Reutilizável"
+            data-preco="12.90"
+            data-imagem="mascara-tecido.png">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="mt-5 py-4 text-center">
+    <div class="container">
+      <div class="row footer-top text-start text-md-start">
+        <div class="col-md-6 contatos mb-4">
+          <h1>Contatos</h1>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-info-circle"></i><a href="sobre.html"> Sobre nós</a></li>
+            <li><i class="fas fa-phone"></i><a href="tel:(47)3333-5555"> (47) 3333-5555</a></li>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/"> @ecovibestore</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:ecovibestore@gmail.com"> ecovibestore@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i><a href="#"> Rua das Flores, 123 - São Paulo, SP</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 logo-footer d-flex justify-content-md-end align-items-center">
+          <img src="Imagens/logotipo.jpg" alt="Logotipo da EcoVibe Store" style="width: 150px; height: auto;" />
+        </div>
+      </div>
+      <p class="mt-4">&copy; 2025 EcoVibe Store. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+    <button id="btnTopo" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+   <script src="JS/voltaraotopo.js"></script>
+   <script src="JS/adicionarCarrinho.js"></script>
+    <script src="JS/header.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

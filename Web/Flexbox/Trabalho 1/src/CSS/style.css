@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f3fadc;
+  background-color: #81a969 !important;
   font-family: 'Poppins', sans-serif;
   color: #32620e;
 }
@@ -73,6 +73,15 @@ table tbody tr:nth-child(even) {
   background-color: #f3fadc; /* cor de fundo para linhas pares */
 }
 
+#produtosContainer , #sobre-nos {
+  background-color: #f3fadc !important;
+}
+
+
+#title {
+  color: #32620e !important;
+  font-weight: bold !important;
+}
 
 /* Logo */
 .logo-header .logo {
@@ -116,6 +125,8 @@ table tbody tr:nth-child(even) {
 .texto-principal .btn:hover {
   background-color: #5e842c;
 }
+
+
 
 /* Cards de produtos */
 .card {
@@ -161,6 +172,16 @@ table tbody tr:nth-child(even) {
   background-color: #5e842c;
 }
 
+/* Produtos */
+
+.produto img {
+  width: 100%;
+  height: 300px; 
+  object-fit: contain; 
+  padding: 5px; 
+}
+
+
 /* Footer */
 footer {
   background-color: #f3fadc;
@@ -186,6 +207,7 @@ footer::before {
 .footer-top {
   position: relative;
   z-index: 1;
+  padding: 2rem;
 }
 
 footer h1 {
@@ -223,3 +245,83 @@ footer a {
     width: 120px;
   }
 }
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0.5rem !important;
+  }
+
+  .texto-principal {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .texto-principal h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto-principal p {
+    font-size: 1rem;
+  }
+
+  .texto-principal .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .produto img {
+    height: 200px; /* menor altura em telas pequenas */
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-top {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer h1 {
+    font-size: 1.3rem;
+  }
+
+  .logo-footer img {
+    width: 100px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text,
+  .card strong {
+    font-size: 0.9rem;
+  }
+
+  .produto img {
+    height: 160px;
+  }
+
+  #btnTopo {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    font-size: 18px;
+  }
+}
+

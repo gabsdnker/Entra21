@@ -123,9 +123,8 @@ Na página **Sobre nós**:
         - Nosso Compromisso
             - Todos os nossos produtos são cuidadosamente selecionados com base em critérios ecológicos, como materiais biodegradáveis, embalagens recicláveis e produção ética. Também buscamos parcerias com fornecedores locais e iniciativas que promovem o consumo responsável.
 
-OBS.: 
-        - Procurar imagens de produtos ecologicos e tirar o fundoda imagem
-        - Colocar mais produtos na página de produtos
+
+
 
 
 

@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login | EcoVibe Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho | EcoVibe Store</title>
   <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="icon" href="Imagens/logotipo.jpg" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #f3fadc;">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="Imagens/logotipo.jpg" alt="EcoVibe Store" style="width: 130px;" />
+          <img src="Imagens/logotipo.jpg" alt="EcoVibe Store" style="width: 130px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,59 +28,47 @@
             <li class="nav-item"><a class="nav-link fw-semibold" href="index.html"><i class="fas fa-home me-1"></i>Início</a></li>
             <li class="nav-item"><a class="nav-link fw-semibold" href="produtos.html"><i class="fas fa-box-open me-1"></i>Produtos</a></li>
             <li class="nav-item"><a class="nav-link fw-semibold" href="sobre.html"><i class="fas fa-info-circle me-1"></i>Sobre Nós</a></li>
-            <li class="nav-item"><a class="nav-link fw-semibold active" aria-current="page" href="login.html"><i class="fas fa-sign-in-alt me-1"></i>Login</a></li>
-            <li class="nav-item"><a class="nav-link fw-semibold" href="carrinho.html"><i class="fas fa-shopping-cart me-1"></i>Carrinho</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="login.html"><i class="fas fa-sign-in-alt me-1"></i>Login</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold active" aria-current="page" href="carrinho.html"><i class="fas fa-shopping-cart me-1"></i>Carrinho</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Conteúdo Principal -->
+  <!-- Conteúdo -->
   <main class="container my-5">
+    <h1 class="fw-bold text-center mb-4" style="color: #32620e;">🛒 Seu Carrinho</h1>
 
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-5">
-        <form id="loginForm" class="p-4 rounded shadow-sm" novalidate style="background-color: #f3fadc;">
-          <h1 class="fw-bold text-center mb-4" style="color: #32620e;">🔐 Login</h1>
+    <div class="table-responsive">
+      <table class="table table-bordered bg-white rounded text-center align-middle" id="tabelaCarrinho">
+        <thead class="table-light">
+          <tr>
+            <th>Produto</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th>Remover</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas serão geradas via JS -->
+        </tbody>
+      </table>
+    </div>
 
-          <!-- Email -->
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input 
-              type="email" 
-              class="form-control" 
-              id="email" 
-              placeholder="seuemail@exemplo.com" 
-              required 
-            />
-            <div class="invalid-feedback">Por favor, insira um email válido.</div>
-          </div>
-
-          <!-- Senha -->
-          <div class="mb-3">
-            <label for="password" class="form-label">Senha</label>
-            <input 
-              type="password" 
-              class="form-control" 
-              id="password" 
-              placeholder="********" 
-              required 
-              minlength="6" 
-            />
-            <div class="invalid-feedback">Por favor, insira sua senha (mínimo 6 caracteres).</div>
-          </div>
-
-          <!-- Botão Entrar -->
-          <button type="submit" class="btn btn-success w-100" style="background-color: #32620e;" onclick="login()">
-            Entrar
-          </button>
-
-          <!-- Link para criar conta -->
-          <p class="mt-3 text-center">
-            Não tem uma conta? <a href="cadastro.html" style="color: #32620e; font-weight: 600;">Cadastre-se aqui</a>
-          </p>
-        </form>
+    <!-- Resumo -->
+    <div class="row justify-content-end">
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h4 class="fw-bold mb-3 text-center" style="color: #32620e;">Resumo do Pedido</h4>
+          <p>Subtotal: <span class="float-end" id="subtotal">R$ 0,00</span></p>
+          <p>Frete: <span class="float-end" id="frete">R$ 10,00</span></p>
+          <hr>
+          <h5>Total: <span class="float-end" id="total">R$ 0,00</span></h5>
+          <button type="submit" class="btn btn-success w-100" style="background-color: #32620e;" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
       </div>
     </div>
   </main>
@@ -112,9 +100,10 @@
   </button>
 
   <script src="JS/voltaraotopo.js"></script>
-  <script src="JS/login.js"></script>
-   <script src="JS/header.js"></script>
-  
+  <script src="JS/carrinho.js"></script>
+  <script src="JS/finalizarCompra.js"></script>
+  <script src="JS/header.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

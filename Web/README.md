@@ -50,6 +50,10 @@ As principais linguagens para desenvolvimento web são:
 
 ### Estrutura de arquivos
 
+- APIs
+  - Exemplos
+  - README.md
+
 - Bootstrap
   -README.md
 

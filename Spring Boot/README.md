@@ -13,4 +13,5 @@ Dependecias
  - Spring Web
  - MySQL Driver
  - Spring Boot DevTool
+ - Spring Data JPA
 

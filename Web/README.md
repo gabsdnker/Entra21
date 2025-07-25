@@ -55,7 +55,7 @@ As principais linguagens para desenvolvimento web são:
   - README.md
 
 - Bootstrap
-  -README.md
+  - README.md
 
 - Exemplos
   - Exemplo 1

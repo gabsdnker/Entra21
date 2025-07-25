@@ -295,11 +295,11 @@
 
      No JavaScript:
 
-     function validarNome(){
-        const nome = document.getElementById("nome").value;
-        if (nome != "Henrique"){
-                alert("Nome inválido");
-                return false;
+        function validarNome(){
+                const nome = document.getElementById("nome").value;
+                if (nome != "Henrique"){
+                        alert("Nome inválido");
+                        return false;
+                }
+                window.location.href = "outro.html";
         }
-        window.location.href = "outro.html";
-     }

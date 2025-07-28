@@ -9,9 +9,8 @@ https://start.spring.io/index.html
  - Artifact: onecode-spring-boot
  - Java 21
 
-Dependecias
+Dependencias
  - Spring Web
  - MySQL Driver
  - Spring Boot DevTool
  - Spring Data JPA
-

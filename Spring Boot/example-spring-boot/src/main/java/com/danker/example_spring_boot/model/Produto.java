@@ -5,11 +5,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+//Indica que esta classe é uma entidade JPA
 @Entity
+
+// Define o nome da tabela no banco de dados que esta entidade irá mapear
 @Table(name = "produto")
 
 public class Produto {
+
+    // Define o campo 'id' como chave primária da entidade
     @Id
+
+    // Define o nome da coluna no banco de dados que corresponde a este campo
     @Column(name = "id")
     private int id;
 
@@ -19,9 +26,11 @@ public class Produto {
     @Column(name = "preco")
     private double preco;
 
+    // Construtor padrão necessário para JPA
     public Produto() {
     }
 
+    // Construtor com parâmetros para inicializar os campos da entidade
     public Produto(int id, String nmProduto, double preco) {
         this.id = id;
         this.nmProduto = nmProduto;

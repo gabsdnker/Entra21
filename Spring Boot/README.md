@@ -14,4 +14,3 @@ Dependencias
  - MySQL Driver
  - Spring Boot DevTool
  - Spring Data JPA
-

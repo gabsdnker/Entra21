@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Departamento</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/html/cadastro-funcionario.html">Cadastrar Funcionário</a></li>
+                <li><a href="/html/lista-funcionarios.html">Listar Funcionários</a></li>
+                <li><a href="/html/cadastro-departamento.html">Cadastrar Departamento</a></li>
+                <li><a href="/html/lista-departamentos.html">Listar Departamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Editar Departamento</h1>
+
+    <form id="form-editar">
+        <input type="hidden" id="idDepartamento">
+        <label>Nome: <input type="text" id="nome"></label><br><br>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <script>
+        // Pega o ID da URL
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        // Carrega dados do departamento
+        fetch(`/departamentos/${id}`)
+            .then(res => res.json())
+            .then(dep => {
+                document.getElementById('idDepartamento').value = dep.idDepartamento;
+                document.getElementById('nome').value = dep.nmDepartamento;
+            });
+        // Salva alterações
+        document.getElementById('form-editar').onsubmit = function (e) {
+            e.preventDefault();
+            fetch('/departamentos', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    idDepartamento: document.getElementById('idDepartamento').value,
+                    nmDepartamento: document.getElementById('nome').value
+                })
+            }).then(resp => {
+                if (resp.ok) {
+                    alert('Departamento atualizado!');
+                    window.location.href = '/html/lista-departamentos.html';
+                } else {
+                    alert('Erro ao atualizar departamento.');
+                }
+            });
+        };
+    </script>
+</body>
+
+</html>

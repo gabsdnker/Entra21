@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/html/cadastro-funcionario.html">Cadastrar Funcionário</a></li>
+                <li><a href="/html/lista-funcionarios.html">Listar Funcionários</a></li>
+                <li><a href="/html/cadastro-departamento.html">Cadastrar Departamento</a></li>
+                <li><a href="/html/lista-departamentos.html">Listar Departamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="formDepartamento">
+        <label for="nomeDepartamento">
+            Nome do Departamento:
+        </label>
+        <input id="nomeDepartamento" type="text" name="nmDepartamento" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+    <script>
+        document.getElementById('formDepartamento').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const departamento = {
+                nmDepartamento: form.nmDepartamento.value.trim()
+            };
+
+            try {
+                const response = await fetch('http://localhost:8080/departamentos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(departamento)
+                });
+
+                if (response.ok) {
+                    alert('Departamento cadastrado com sucesso!');
+                    form.reset();
+                } else {
+                    const errorText = await response.text();
+                    alert('Erro ao cadastrar: ' + errorText);
+                }
+            } catch (error) {
+                alert('Erro de rede: ' + error.message);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

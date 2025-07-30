@@ -12,10 +12,10 @@ import java.util.Collections;
 @Service
 public class FuncionarioDetailsService implements UserDetailsService {
 
-	@Autowired
+	@Autowired // Injeção de dependência do repositório FuncionarioRepository
 	private FuncionarioRepository repo;
 
-	@Override
+	@Override // Método que carrega os detalhes do usuário pelo email
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 		Funcionario funcionario = repo.findByEmail(email)
 				.orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado"));

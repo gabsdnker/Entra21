@@ -19,8 +19,8 @@ public class Funcionario {
 	
 	// Oi
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id // Anotação para indicar que este campo é a chave primária
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Anotação para indicar que o valor é gerado automaticamente pelo banco de dados
 	private int idFuncionario;
 
 	@Column(name = "nome", length = 100, nullable = false)
@@ -38,17 +38,17 @@ public class Funcionario {
 	@Column(name = "data_nascimento", nullable = false)
 	private LocalDate dataNascimento;
 
-	@Column(name = "salario", precision = 10, scale = 2)
+	@Column(name = "salario", precision = 10, scale = 2) // *precision* define o número total de dígitos e *scale* define o número de dígitos após a vírgula
 	private BigDecimal salario;
 
 	@Column(name = "gerente", nullable = false)
 	private boolean gerente;
 
-	@Embedded
+	@Embedded // Anotação para indicar que Endereco é uma classe embutida
 	private Endereco endereco;
 
-	@ManyToOne
-	@JoinColumn(name = "id_departamento", referencedColumnName = "id_departamento")
+	@ManyToOne // Anotação para indicar que Funcionario tem um relacionamento muitos-para-um com Departamento
+	@JoinColumn(name = "id_departamento", referencedColumnName = "id_departamento") // Define a coluna de junção com o Departamento
 	private Departamento departamento;
 
 	public Funcionario() {

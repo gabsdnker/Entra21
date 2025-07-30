@@ -9,13 +9,13 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
+@Configuration // Anotação para indicar que esta classe é uma configuração do Spring
 public class SecurityConfig {
 
-	@Autowired
+	@Autowired // Injeção de dependência do serviço FuncionarioDetailsService
 	private FuncionarioDetailsService userDetailsService;
 
-	@Bean
+	@Bean // Define um bean do tipo WebSecurityCustomizer
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
 				.formLogin(form -> form.usernameParameter("email").defaultSuccessUrl("/html/lista-funcionarios.html", true)
@@ -24,7 +24,7 @@ public class SecurityConfig {
 		return http.build();
 	}
 
-	@Bean
+	@Bean 
 	public PasswordEncoder passwordEncoder() {
 		// Sem criptografia, apenas para testes!
 		return NoOpPasswordEncoder.getInstance();

@@ -12,7 +12,7 @@ import com.delegrego.exemplo_spring_boot_2.repo.DepartamentoRepository;
 @Service
 public class DepartamentoService {
 
-	@Autowired
+	@Autowired // Injeção de dependência do repositório DepartamentoRepository
 	private DepartamentoRepository repo;
 
 	public void cadastrarDepartamento(Departamento d) {

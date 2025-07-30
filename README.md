@@ -12,12 +12,12 @@
     - Inglês - 80 horas ✅
     - Introdução a Banco de Dados - 36 horas ✅
     - Introdução ao JavaScript - 32 horas ✅
-    - Introdução ao Spring Framework - 40 horas ✔️
+    - Introdução ao Spring Framework - 40 horas ✅
     - Java para Web: Fundamentos - 32 horas ✅
     - Metodologias Ágeis para TI - 8 horas  ✅
     - Programação Orientada a Objetos (OOP) - 32 horas ✅
     - Projeto Final - 28 horas
-    - Tecnologias Emergentes e IA - 32 horas
+    - Tecnologias Emergentes e IA - 32 horas ✅
 
 ## Pastas
 
@@ -38,6 +38,7 @@
 
 - Spring Boot
     - example-spring-boot
+    - example-spring-boot-2
     - README.md
 
 - Web

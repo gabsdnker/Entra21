@@ -12,7 +12,7 @@ import com.delegrego.exemplo_spring_boot_2.repo.FuncionarioRepository;
 @Service
 public class FuncionarioService {
 
-	@Autowired
+	@Autowired // Injeção de dependência do repositório FuncionarioRepository
 	private FuncionarioRepository repo;
 
 	public void cadastrarFuncionario(Funcionario f) {
